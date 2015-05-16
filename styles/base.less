@@ -1,0 +1,366 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: #343d46;
+}
+
+.comment {
+  font-style: italic;
+  color: #5f696f;
+}
+
+.string {
+  color: #6a9fd6;
+}
+
+.constant.numeric {
+  color: #00a8c6;
+}
+
+.constant.language {
+  color: #00a8c6;
+}
+
+.constant.character, .constant.other {
+}
+
+.variable {
+}
+
+.keyword {
+  color: #9872A2;
+}
+
+.storage {
+  color: #9872A2;
+}
+
+.storage.type {
+  color: #9872A2;
+}
+
+.entity.name.class {
+}
+
+.entity.other.inherited-class {
+  color: #9872A2;
+}
+
+.entity.name.function {
+}
+
+.variable.parameter {
+  font-style: italic;
+  color: #9872A2;
+}
+
+.entity.name.tag {
+  color: #9872A2;
+}
+
+.entity.other.attribute-name {
+}
+
+.support.function {
+}
+
+.support.type, .support.class {
+}
+
+.support.other.variable {
+  color: #9872A2;
+}
+
+.invalid {
+  background-color: #f92672;
+}
+
+.invalid.deprecated {
+  background-color: #ae81ff;
+}
+
+.support.type.property-name.css, .meta.property-name.css {
+  color: #9872A2;
+}
+
+.punctuation.section.property-list.css {
+}
+
+.entity.other.attribute-name.class.css {
+  color: #6a9fd6;
+}
+
+.entity.name.tag.css {
+  color: #6a9fd6;
+}
+
+.meta.selector.css {
+  color: #6a9fd6;
+}
+
+.entity.other.attribute-name.id.css {
+  color: #6a9fd6;
+}
+
+.meta.property-value.css.numeric.css, .keyword.other.unit.css, .constant.other.color.rgb-value.css {
+  color: #00a8c6;
+}
+
+.punctuation.separator.key-value.css, .punctuation.terminator.rule.css {
+}
+
+.meta.function.js, .entity.name.function.js, .support.function.dom.js {
+}
+
+.markup.deleted.git_gutter {
+  color: #FF2323;
+}
+
+.markup.inserted.git_gutter {
+  color: #00aa00;
+}
+
+.a77e03 {
+  color: #a77e03;
+}
+
+.text.html.markdown .markup.raw.inline {
+  background-color: #35373b;
+}
+
+.markup.heading {
+  font-weight: bold;
+}
+
+.markup.list {
+}
+
+.markup.quote {
+  font-style: italic;
+}
+
+.entity.name.section.markdown {
+}
+
+.punctuation.definition.heading.markdown {
+  color: #9872A2;
+}
+
+.markup.underline.link.markdown, .markup.underline.link.image.markdown, .meta.image.inline.markdown {
+  text-decoration: underline;
+  color: #9872A2;
+}
+
+.markup.raw.block.markdown {
+}
+
+.text.html.markdown {
+}
+
+.entity.other.attribute-name.class.stylus {
+  color: #6a9fd6;
+}
+
+.entity.name.tag.stylus {
+  color: #6a9fd6;
+}
+
+.meta.selector.stylus {
+  color: #6a9fd6;
+}
+
+.entity.other.attribute-name.id.stylus {
+  color: #6a9fd6;
+}
+
+.meta.property-value.stylus .constant.numeric.stylus, .keyword.other.unit.stylus, .constant.other.color.rgb-value.stylus {
+  color: #00a8c6;
+}
+
+.entity.other.attribute-name.pseudo-element.css, .entity.other.attribute-name.pseudo-class.css {
+  color: #6a9fd6;
+}
+
+.entity.other.attribute-name.pseudo-element.stylus, .entity.other.attribute-name.pseudo-class.stylus {
+  color: #6a9fd6;
+}
+
+.meta.property-group .support.constant.property-value.css, .meta.property-value .support.constant.property-value.css, .meta.property-value.css {
+}
+
+.meta.property-group .support.constant.property-value.stylus, .meta.property-value .support.constant.property-value.stylus, .meta.property-value.stylus {
+}
+
+.support.type.property-name.stylus, .meta.property-name.stylus {
+  color: #9872A2;
+}
+
+.markup.bold {
+  font-weight: bold;
+}
+
+.markup.italic {
+  font-style: italic;
+}
+
+.constant.other.reference.link.markdown {
+  color: #6a9fd6;
+}
+
+.punctuation.definition.blockquote.markdown {
+  color: #484e56;
+  background-color: #484e56;
+}
+
+.string.other.link.description.markdown {
+  color: #6a9fd6;
+}
+
+.punctuation.definition.bold.markdown {
+  color: #9872A2;
+}
+
+.punctuation.definition.fenced.markdown {
+  color: #9872A2;
+}
+
+.punctuation.definition.italic.markdown {
+  color: #9872A2;
+}
+
+.punctuation.definition.raw.markdown {
+  color: #9872A2;
+}
+
+.markup.list.unnumbered.markdown .punctuation.definition.list_item.markdown, .markup.list.numbered.markdown .punctuation.definition.list_item.markdown {
+  color: #9872A2;
+}
+
+.markup.raw.block.markdown {
+  background-color: #35373b;
+}
+
+.meta.structure.dictionary.json .string.quoted.double {
+  color: #9872A2;
+}
+
+.meta.structure .meta.structure.dictionary.json .string.quoted.double {
+  color: #9872A2;
+}
+
+.meta.structure .meta.structure .meta.structure .meta.structure.dictionary.json .string.quoted.double {
+  color: #9872A2;
+}
+
+.meta.structure .meta.structure .meta.structure .meta.structure .meta.structure .meta.structure.dictionary.json .string.quoted.double {
+  color: #9872A2;
+}
+
+.meta.structure .meta.structure .meta.structure .meta.structure .meta.structure .meta.structure .meta.structure .meta.structure.dictionary.json .string.quoted.double {
+  color: #9872A2;
+}
+
+.meta.structure.dictionary.value.json .string.quoted.double {
+  color: #6a9fd6;
+}
+
+.meta.structure .meta.structure .meta.structure.dictionary.value.json .string.quoted.double {
+  color: #6a9fd6;
+}
+
+.meta.structure .meta.structure .meta.structure .meta.structure .meta.structure.dictionary.value.json .string.quoted.double {
+  color: #6a9fd6;
+}
+
+.meta.structure .meta.structure .meta.structure .meta.structure .meta.structure .meta.structure .meta.structure.dictionary.value.json .string.quoted.double {
+  color: #6a9fd6;
+}
+
+.meta.structure .meta.structure .meta.structure .meta.structure .meta.structure .meta.structure .meta.structure .meta.structure .meta.structure.dictionary.value.json .string.quoted.double {
+  color: #6a9fd6;
+}
+
+.punctuation.definition.comment.js {
+}
+
+.comment.block.documentation.js {
+}
+
+.comment.block.js, .comment.line.double-slash.js {
+}
+
+.punctuation.definition.comment.css {
+}
+
+.comment.block.css {
+}
+
+.punctuation.definition.comment.python {
+}
+
+.comment.block.python, .comment.line.number-sign.python {
+}
+
+.comment.block.html {
+}
+
+.punctuation.definition.comment.html {
+}
+
+.meta.tag.sgml.doctype.html {
+  font-style: italic;
+  color: #5f696f;
+}
+
+.meta.function-call.arguments.python {
+  font-style: italic;
+  color: #9872a2;
+}
