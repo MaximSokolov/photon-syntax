@@ -1,40 +1,46 @@
+@import "../colors";
+
+// Property name
 .support.type.property-name.css,
 .meta.property-name.css {
-	color: #9872A2;
+	color: @purple;
 }
 
-.punctuation.section.property-list.css {
+// Property value
+.support.constant.property-value.css {
+	color: @light-gray;
 }
 
+// .class selector
 .entity.other.attribute-name.class.css {
-	color: #6a9fd6;
-}
-
-.entity.name.tag.css {
-	color: #6a9fd6;
+	color: @blue;
 }
 
 .meta.selector.css {
-	color: #6a9fd6;
+	color: @cyan;
 }
 
-.entity.other.attribute-name.id.css {
-	color: #6a9fd6;
-}
-
+// Numeric values
 .meta.property-value.css.numeric.css,
 .keyword.other.unit.css,
 .constant.other.color.rgb-value.css {
-	color: #00a8c6;
+	color: @cyan;
 }
 
-.punctuation.separator.key-value.css,
-.punctuation.terminator.rule.css {
-}
-
-.punctuation.definition.comment.css {
-}
-
-.entity.other.attribute-name.pseudo-element.css, .entity.other.attribute-name.pseudo-class.css {
-	color: #6a9fd6;
+.entity {
+	// element selector
+	&.name.tag.css {
+		color: @blue;
+	}
+	
+	// #id selector
+	&.other.attribute-name.id.css {
+		color: @blue;
+	}
+	
+	&.other.attribute-name.pseudo-element.css, &.other.attribute-name.pseudo-class.css,
+	&.name.tag.custom.css {
+		color: @cyan;
+	}
+	
 }
