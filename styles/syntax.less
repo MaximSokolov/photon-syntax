@@ -92,6 +92,15 @@
 	// class, function, int, var
 	&.type {
 		color: @base1;
+		
+		&.class.fixme,
+		&.class.todo,
+		&.class.xxx,
+		&.class.hack,
+		&.class.note,
+		&.class.idea {
+			color: @magenta
+		}
 	}
 	
 	// static, final, abstract
