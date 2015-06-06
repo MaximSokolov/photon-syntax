@@ -39,11 +39,17 @@
 
 .storage {
 	color: @violet;
-	
-	&.type.class {
-		&.fixme, &.todo, &.xxx, &.hack, &.note, &.idea {
-			color: @magenta
-		}
+
+	&.fixme, &.xxx, &.hack, {
+		color: @magenta;
+	}
+
+	&.todo, &.note, &.idea, &.review {
+		color: @purple;
+	}
+
+	&.changed {
+		color: @yellow;
 	}
 }
 
