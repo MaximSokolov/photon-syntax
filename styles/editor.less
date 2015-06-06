@@ -1,0 +1,58 @@
+@import "colors";
+
+atom-text-editor, :host {
+	background: @background;
+	color: @text;
+	
+	// Selected text
+	.selection .region {
+		background: @selection;
+	}
+	
+	// Active line
+	.line.cursor-line {
+		background: #343d46;
+	}
+	
+	// Line between bracket indentations
+	.indent-guide {
+		color: @indent-guide;
+	}
+	
+	.invisible-character {
+		color: @invisible-character;
+	}
+	
+	// Line that designates where text will wrap
+	.wrap-guide {
+		color: @wrap-guide;
+	}
+
+	.search-results {
+		.marker .region {
+			background: transparent;
+			border: @result-marker;
+		}
+		
+		.marker.current-result .region {
+			border: @result-marker-selected;
+		}
+	}	
+
+	// Line numbers
+	.gutter {
+		background: @gutter-background;
+		color: @gutter-text;
+		
+		// Selected block
+		.line-number.cursor-line {
+			background: @gutter-background-selected;
+			color: @gutter-text-selected;
+		}
+		
+		// Active line
+		.line-number.cursor-line-no-selection {
+			color: @gutter-text-selected;
+		}
+	}
+}
