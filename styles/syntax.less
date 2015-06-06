@@ -87,8 +87,28 @@
 }
 
 .punctuation {
-	&.definition.tag {
-		color: @cyan;
+	&.definition {
+		&.method-parameters {
+			color: @text;
+		}
+
+		&.tag {
+			color: @cyan;
+		}
+
+		&.string,
+		&.parameters,
+		&.inheritance {
+			color: @silver;
+		}
+	}
+
+	&.section {
+		color: @silver;
+	}
+
+	&.separator.key-value {
+		color: @silver;
 	}
 }
 
