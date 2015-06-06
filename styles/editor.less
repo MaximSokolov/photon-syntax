@@ -3,7 +3,10 @@
 atom-text-editor, :host {
 	background: @background;
 	color: @text;
-	
+
+	.cursor {
+		border-left: 2px solid @cursor;
+	}
 	// Selected text
 	.selection .region {
 		background: @selection;
