@@ -1,7 +1,19 @@
 {
-	"name": "my-theme",
+	"name": "photon-syntax",
 	"theme": "syntax",
-	"version": "0.0.1",
+	"version": "0.1.0",
+	"description": "A dark syntax theme for Atom",
+	"keywords": [
+		"dark",
+		"syntax",
+		"theme",
+		"spacegray"
+	],
+	"repository": "https://github.com/MaximSokolov/photon-syntax",
+	"author": {
+		"name": "Maxim Sokolov",
+		"email": "maxim0xff@gmail.com"
+	},
 	"license": "MIT",
 	"engines": {
 		"atom": ">=0.174.0 <2.0.0"
