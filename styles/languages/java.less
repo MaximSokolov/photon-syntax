@@ -1,0 +1,33 @@
+@import "../colors";
+
+.java {
+	.import {
+		.storage.modifier {
+		color: @text;
+
+		}
+		.keyword {
+			color: @violet;
+		}
+	}
+
+	.variable.parameter {
+		font-style: normal;
+	}
+
+	.storage {
+		&.type {
+			color: @text;
+		}
+
+		// e.g. void, int, public
+		&.primitive,
+		&.modifier {
+			color: @violet;
+		}
+	}
+
+	.keyword.operator.dereference {
+		color: @silver;
+	}
+}
