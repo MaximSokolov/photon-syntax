@@ -1,13 +1,28 @@
 @import "../colors";
 
-.meta.structure.dictionary.json > .string.quoted.double {
-	color: @cyan
-}
+.json {
+	.punctuation.dictionary {
+		&.definition.begin,
+		&.definition.end,
+		&.separator.key-value,
+		&.separator.pair {
+			color: @silver;
+		}
+	}
 
-.meta.structure.dictionary.value.json > .string.quoted.double {
-	color: @white
-}
+	.structure.dictionary > .string.quoted.double {
+		color: @cyan;
 
-.punctuation.definition.string.json {
-	color: @white;
+		.punctuation.definition.string {
+			color: @cyan;
+		}
+	}
+
+	.structure.dictionary.value > .string.quoted.double {
+		color: @text;
+
+		.punctuation.definition.string {
+			color: @text;
+		}
+	}
 }
