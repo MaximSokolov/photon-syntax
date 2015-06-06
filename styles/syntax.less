@@ -28,6 +28,9 @@
 
 .keyword {
 	color: @violet;
+	&.operator {
+		color: @purple;
+	}
 }
 
 .storage {
@@ -45,14 +48,18 @@
 		color: @cyan;
 	}
 	
-	&.other.inherited-class {
-		color: @purple;
+	&.other.attribute-name {
+		color: @silver;
 	}
 }
 
 .support {
 	&.other.variable {
 		color: @purple;
+	}
+	
+	&.type.property-name {
+		color: @cyan;
 	}
 }
 
@@ -63,5 +70,11 @@
 	
 	&.deprecated 	{
 		background-color: @magenta;
+	}
+}
+
+.punctuation {
+	&.definition.tag {
+		color: @cyan;
 	}
 }
