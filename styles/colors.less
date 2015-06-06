@@ -1,4 +1,6 @@
-// These colors are specific to the theme.
+// Colors in this file are specific to the theme.
+// Don't use them in a package!
+
 @white: #d9dce3;
 @silver: #909eae;
 @light-gray: #5f696f;
@@ -15,7 +17,6 @@
 @green: #73c990;
 @purple: #9370DB;
 
-// General colors
 @text: @white;
 @cursor: @white;
 @cursor: darken(@blue, 15%);
@@ -23,22 +24,18 @@
 @selection: fadeout(lighten(@background, 10%), 50%);
 @background: @dark-gray;
 
-// Guide colors
 @wrap-guide: @gray;
 @indent-guide: @gray;
 @invisible-character: @light-gray;
 
-// For find and replace markers
 @result-marker: @light-gray;
 @result-marker-selected: @white;
 
-// Gutter
 @gutter-text: @light-gray;
 @gutter-text-selected: @silver;
 @gutter-background: @dark-gray;
 @gutter-background-selected: @gray;
 
-// For git diff info. i.e. in the gutter
 @renamed: @blue;
 @added: @green;
 @modified: @yellow;

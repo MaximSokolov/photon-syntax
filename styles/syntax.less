@@ -1,5 +1,9 @@
 @import "colors";
 
+// See list of scopes in "Naming Conventions" section of the
+// TextMate Language Grammar Guide:
+// http://manual.macromates.com/en/language_grammars
+
 .comment {
 	font-style: italic;
 	color: @light-gray;
@@ -27,10 +31,8 @@
 	}
 }
 
-.variable {
-	&.parameter {
-		font-style: italic;
-	}
+.variable.parameter {
+	font-style: italic;
 }
 
 .keyword {
@@ -66,8 +68,8 @@
 	&.inherited-class {
 		color: @cyan;
 	}
-	
-	&.other.attribute-name {
+
+	&.attribute-name {
 		color: @silver;
 	}
 }
@@ -76,7 +78,7 @@
 	&.other.variable {
 		color: @purple;
 	}
-	
+
 	&.type.property-name {
 		color: @cyan;
 	}
