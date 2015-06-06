@@ -1,57 +1,98 @@
 @import "../colors";
 
-// Property name
-.support.type.property-name.css,
-.meta.property-name.css {
-	color: @violet;
-}
-
-// Property value
-.support.constant.property-value.css {
-	color: @white;
-}
-
-// .class selector
-.entity.other.attribute-name.class.css {
-	color: @cyan;
-}
-
-// Numeric values
-.meta.property-value.css.numeric.css,
-.keyword.other.unit.css,
-.constant.other.color.rgb-value.css {
-	color: @cyan;
-}
-
-// !important
-.keyword.other.important.css {
-	color: @violet;
-}
-
-// @font-face
-.keyword.control.at-rule.font-face.css > .punctuation.definition.keyword.css,
-.keyword.control.at-rule.font-face.css {
-	color: @cyan;
-}
-
-.entity {
-	// element selector
-	&.name.tag.css {
-		color: @cyan;
+.css {
+	.property-name {
+		color: cyan;
 	}
-	
-	// #id selector
-	&.other.attribute-name.id.css {
-		color: @cyan;
+
+	.property-value {
+		color: @silver;
 	}
-	
-	&.other.attribute-name.attribute.css {
+
+	// e.g. center, screen, serif
+	.constant {
 		color: @white;
 	}
-	
-	&.other.attribute-name.pseudo-element.css,
-	&.other.attribute-name.pseudo-class.css,
-	&.name.tag.custom.css {
-		color: @cyan;
+
+	// e.g. url
+	.function {
+		color: @text;
+
+		&.punctuation {
+			color: @silver;
+		}
+	}
+
+	// e.g. 2.5em, 30px
+	.numeric,
+	.unit {
+		color: @aqua;
+	}
+
+	// e.g. @import, @font-face
+	.punctuation.definition.keyword,
+	.keyword.control {
+		color: @violet;
+	}
+
+	// {} ;
+	.punctuation.terminator.rule,
+	.punctuation.section.property-list {
+			color: @silver;
+	}
+
+	.keyword.important {
+		color: @purple;
+	}
+
+	.font-face, .font-face > .punctuation {
+		color: @violet;
+	}
+
+	.attribute-selector {
+		// HACK: There is no scope for ']' in attribute-selector
+		color: @silver;
+		.punctuation.definition.entity {
+			color: @silver;
+		}
+
+		// e.g. 'href' in 'a[href="foo"]' or 'lang' in 'span[lang]'
+		.entity.other.attribute-name.attribute {
+			color: @text;
+		}
+
+		// e.g. '^=' in 'a[href^="https"]'
+		.punctuation.separator.operator {
+			color: @violet;
+		}
+	}
+
+	// e.g. ::first-line in p::first-line
+	.attribute-name.pseudo-element {
+		color: @violet;
+
+		.punctuation.definition {
+			color: @silver;
+		}
+	}
+
+	.attribute-name.class,
+	.attribute-name.id,
+	.tag.name	{
+		color: @violet;
+	}
+
+	// e.g. :active in a:active
+	.attribute-name.pseudo-class {
+		color: @violet;
+
+		.punctuation.definition {
+			color: @silver;
+		}
+	}
+
+	// e.g. and, &, >
+	.keyword.operator {
+		color: lighten(@purple, 10%);
 	}
 }
