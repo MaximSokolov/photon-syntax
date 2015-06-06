@@ -1,5 +1,10 @@
 @import "../colors";
 
 .spell-check-misspelling .region {
-  border-bottom: thin dashed @red;
+  background-color: @red;
+  border-bottom: none;
+  -webkit-mask-image: url('atom://photon-syntax/img/wave.svg');
+  -webkit-mask-repeat: repeat-x;
+  -webkit-mask-size: .9em 1.3em;
+  -webkit-mask-position: bottom left
 }
