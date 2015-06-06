@@ -91,3 +91,34 @@
 		color: @cyan;
 	}
 }
+
+.markup {
+	&.underline {
+		border-bottom: thin solid;
+	}
+
+	&.bold {
+		font-weight: bold;
+	}
+
+	&.italic,
+	&.quote {
+		font-style: italic;
+	}
+
+	&.strike {
+		text-decoration: line-through;
+	}
+
+	&.deleted {
+		color: @orange !important;
+	}
+
+	&.inserted {
+		color: @green !important;
+	}
+
+	&.raw {
+		color: @silver;
+	}
+}
