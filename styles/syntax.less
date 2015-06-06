@@ -3,36 +3,6 @@
 .comment {
 	font-style: italic;
 	color: @gray;
-	
-	.line {
-		// // 
-		.double-slash {
-			
-		}
-		// -- 
-		.double-dash {
-			
-		}
-		// # 
-		.number-sign {
-			
-		}
-		// %
-		.percentage {
-			
-		}
-		// other
-		.character {
-			
-		}
-	}
-	
-	// comments like /* … */ and <!-- … -->
-	.block {
-		.documentation {
-			
-		}
-	}
 }
 
 .string {
@@ -40,32 +10,16 @@
 }
 
 .constant {
-	// color: @constant;
-	
-	// 42, 1.3f, 0x4AB1U
 	&.numeric {
 		color: @cyan;
 	}
 
-	// True, false, null, undefined
 	&.language {
 		color: @cyan;
-	}
-
-	// &lt;, \e, \031
-	&.character {
-		
-	}
-	
-	// e.g. colors in CSS
-	&.constant.other {
-		
 	}
 }
 
 .variable {
-	color: @base1;
-	
 	&.parameter {
 		font-style: italic;
 		color: @cyan;
@@ -74,75 +28,31 @@
 
 .keyword {
 	color: @base1;
-	
-	// try, catch, if, else, return (js)
-  &.control {
-    // color: @keyword;
-  }
-
-  // =, +, -, ?, :, !=. &&, in (js)
-  &.operator {
-    // color: @keyword;
-  }
 }
 
 .storage {
 	color: @base1;
 	
-	// class, function, int, var
-	&.type {
-		color: @base1;
-		
-		&.class.fixme,
-		&.class.todo,
-		&.class.xxx,
-		&.class.hack,
-		&.class.note,
-		&.class.idea {
+	&.type.class {
+		&.fixme, &.todo, &.xxx, &.hack, &.note, &.idea {
 			color: @magenta
 		}
-	}
-	
-	// static, final, abstract
-	&.modifier {
-		
 	}
 }
 
 .entity {
-	&.name {
-		&.function {}
-		
-		&.tag {
-			color: @base1;
-		}
-		
-		&.section {}
+	&.name.tag {
+		color: @base1;
 	}
 	
-	&.other {
-		&.inherited-class {
-			color: @base1;
-		}
-
-		&.attribute-name {}
+	&.other.inherited-class {
+		color: @base1;
 	}
 }
 
-// Things provided by a framework or library
 .support {
-	&.function {}
-		
-	&.type {}
-		
-	&.class {}
-		
-	&.variable {}
-		
-	&.other {
-		&.variable {
-			color: @base1;
-		}
+	&.other.variable {
+		color: @base1;
 	}
 }
 
