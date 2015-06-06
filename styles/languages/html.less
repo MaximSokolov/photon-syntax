@@ -1,6 +1,13 @@
 @import "../colors";
 
-.meta.tag.sgml.doctype.html {
-	font-style: italic;
-	color: @light-gray;
+.html {
+	.meta.tag {
+		color: @silver;
+	}
+
+	.meta.tag.sgml.doctype,
+	.meta.tag.sgml > .punctuation.definition.tag {
+		font-style: italic;
+		color: @light-gray;
+	}
 }
