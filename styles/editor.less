@@ -71,6 +71,22 @@ atom-text-editor, :host {
 		.line-number.cursor-line-no-selection {
 			color: @gutter-text-selected;
 		}
+
+		.git-line-added {
+			color: @gutter-text;
+
+			&.cursor-line {
+				color: fadeout(@green, 25%);
+			}
+		}
+
+		.git-line-modified {
+			color: @gutter-text;
+
+			&.cursor-line {
+				color: fadeout(@yellow, 25%);
+			}
+		}
 	}
 	
 	.diff {
