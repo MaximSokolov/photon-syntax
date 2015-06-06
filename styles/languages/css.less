@@ -3,7 +3,7 @@
 // Property name
 .support.type.property-name.css,
 .meta.property-name.css {
-	color: @purple;
+	color: @violet;
 }
 
 // Property value
@@ -13,10 +13,6 @@
 
 // .class selector
 .entity.other.attribute-name.class.css {
-	color: @blue;
-}
-
-.meta.selector.css {
 	color: @cyan;
 }
 
@@ -27,20 +23,35 @@
 	color: @cyan;
 }
 
+// !important
+.keyword.other.important.css {
+	color: @violet;
+}
+
+// @font-face
+.keyword.control.at-rule.font-face.css > .punctuation.definition.keyword.css,
+.keyword.control.at-rule.font-face.css {
+	color: @cyan;
+}
+
 .entity {
 	// element selector
 	&.name.tag.css {
-		color: @blue;
+		color: @cyan;
 	}
 	
 	// #id selector
 	&.other.attribute-name.id.css {
-		color: @blue;
-	}
-	
-	&.other.attribute-name.pseudo-element.css, &.other.attribute-name.pseudo-class.css,
-	&.name.tag.custom.css {
 		color: @cyan;
 	}
 	
+	&.other.attribute-name.attribute.css {
+		color: @white;
+	}
+	
+	&.other.attribute-name.pseudo-element.css,
+	&.other.attribute-name.pseudo-class.css,
+	&.name.tag.custom.css {
+		color: @cyan;
+	}
 }
