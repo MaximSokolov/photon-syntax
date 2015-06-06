@@ -1,0 +1,101 @@
+@import "../colors";
+
+.gfm {
+	.heading {
+		font-weight: bold;
+		color: lighten(@cyan, 5%);
+
+		.marker {
+			color: @cyan;
+			font-weight: bold;
+		}
+	}
+
+	.quote {
+		color: @text;
+
+		&.support {
+				color: @light-gray;
+				background-color: @light-gray;
+		}
+	}
+
+	.link {
+		color: @silver;
+
+		.entity {
+			color: lighten(@violet, 5%);
+		}
+
+		&.underline {
+			color: @silver;
+			border-bottom: thin solid;
+
+			.punctuation.definition {
+				color: @silver;
+			}
+		}
+	}
+
+	&.issue {
+		&.tag {
+			color: @cyan;
+		}
+
+		&.number {
+			color: @cyan;
+		}
+	}
+
+	& > .support {
+		color: @silver;
+	}
+
+	.table {
+		.border {
+			color: @cyan;
+
+			&.outer {
+				color: @cyan;
+			}
+
+			&.header {
+				color: @cyan;
+			}
+		}
+
+		.alignment {
+			color: @cyan;
+		}
+	}
+
+	.list {
+		color: fadeout(@cyan, 10%);
+	}
+
+	& > .critic.gfm {
+		.marker {
+			&.addition {
+				color: @green;
+			}
+			&.deletion {
+				color: @red;
+			}
+			&.substitution {
+				color: @orange;
+			}
+			&.comment {
+				color: @blue;
+			}
+			&.highlight {
+				color: @purple;
+				background: @selection;
+				border-radius: 3px
+			}
+		}
+
+		.operator {
+			color: @violet;
+		}
+	}
+}
