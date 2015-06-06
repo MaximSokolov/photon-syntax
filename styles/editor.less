@@ -7,6 +7,20 @@ atom-text-editor, :host {
 	.cursor {
 		border-left: 2px solid @cursor;
 	}
+
+	&.vim-mode.command-mode::shadow {
+			.cursor {
+				border: 1px solid @cyan !important;
+				background-color: @cursor !important;
+			}
+	}
+
+	&.vim-mode.operator-pending-mode::shadow {
+			.cursor {
+				background-color: @cursor-pending-mode !important;
+			}
+	}
+
 	// Selected text
 	.selection .region {
 		background: @selection;
