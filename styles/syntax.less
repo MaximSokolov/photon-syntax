@@ -1,0 +1,148 @@
+@import "colors";
+
+.comment {
+	font-style: italic;
+	color: @gray;
+	
+	.line {
+		// // 
+		.double-slash {
+			
+		}
+		// -- 
+		.double-dash {
+			
+		}
+		// # 
+		.number-sign {
+			
+		}
+		// %
+		.percentage {
+			
+		}
+		// other
+		.character {
+			
+		}
+	}
+	
+	// comments like /* … */ and <!-- … -->
+	.block {
+		.documentation {
+			
+		}
+	}
+}
+
+.string {
+	color: @base2;
+}
+
+.constant {
+	// color: @constant;
+	
+	// 42, 1.3f, 0x4AB1U
+	&.numeric {
+		color: @cyan;
+	}
+
+	// True, false, null, undefined
+	&.language {
+		color: @cyan;
+	}
+
+	// &lt;, \e, \031
+	&.character {
+		
+	}
+	
+	// e.g. colors in CSS
+	&.constant.other {
+		
+	}
+}
+
+.variable {
+	color: @base1;
+	
+	&.parameter {
+		font-style: italic;
+		color: @base1;
+	}
+}
+
+.keyword {
+	color: @base1;
+	
+	// try, catch, if, else, return (js)
+  &.control {
+    // color: @keyword;
+  }
+
+  // =, +, -, ?, :, !=. &&, in (js)
+  &.operator {
+    // color: @keyword;
+  }
+}
+
+.storage {
+	color: @base1;
+	
+	// class, function, int, var
+	&.type {
+		color: @base1;
+	}
+	
+	// static, final, abstract
+	&.modifier {
+		
+	}
+}
+
+.entity {
+	&.name {
+		&.function {}
+		
+		&.tag {
+			color: @base1;
+		}
+		
+		&.section {}
+	}
+	
+	&.other {
+		&.inherited-class {
+			color: @base1;
+		}
+
+		&.attribute-name {}
+	}
+}
+
+// Things provided by a framework or library
+.support {
+	&.function {}
+		
+	&.type {}
+		
+	&.class {}
+		
+	&.variable {}
+		
+	&.other {
+		&.variable {
+			color: @base1;
+		}
+	}
+}
+
+.invalid {
+	&.illegal {
+		background-color: @magenta;
+	}
+	
+	&.deprecated 	{
+		background-color: @violet;
+	}
+}
