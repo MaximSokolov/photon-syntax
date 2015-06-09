@@ -21,6 +21,10 @@ atom-text-editor, :host {
 			}
 	}
 
+	.region {
+		border-radius: 4px;
+	}
+
 	// Selected text
 	.selection .region {
 		background: @selection;
@@ -92,7 +96,7 @@ atom-text-editor, :host {
 			}
 		}
 	}
-	
+
 	.diff {
 		.punctuation.from-file {
 			color: @cyan;
