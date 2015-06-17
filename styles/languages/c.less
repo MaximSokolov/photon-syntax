@@ -1,12 +1,16 @@
 @import "../colors";
 
 .c, .cpp {
-	.meta.preprocessor,
-	.meta.preprocessor .keyword {
-		color: @violet;
-	}
+	.meta.preprocessor {
+		.name.function {
+			color: @cyan;
+		}
+		.constant.numeric {
+			color: @aqua;
+		}
 
-	.entity.name.function.preprocessor {
-		color: @violet;
+		.punctuation.definition.string {
+			color: @blue;
+		}
 	}
 }
