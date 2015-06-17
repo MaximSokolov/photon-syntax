@@ -27,7 +27,7 @@ atom-text-editor, :host {
 
 	// Selected text
 	.selection .region {
-		background: @selection;
+		background: fadeout(lighten(@background, 20%), 50%);
 		border-radius: 3px;
 	}
 
