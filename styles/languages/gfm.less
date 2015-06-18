@@ -24,12 +24,12 @@
 		color: @silver;
 
 		.entity {
-			color: lighten(@violet, 5%);
+			color: lighten(@blue, 5%);
 		}
 
 		&.underline {
 			color: @silver;
-			border-bottom: thin solid;
+			border-bottom: none;
 
 			.punctuation.definition {
 				color: @silver;
@@ -53,24 +53,24 @@
 
 	.table {
 		.border {
-			color: @cyan;
+			color: lighten(@purple, 15%);
 
 			&.outer {
-				color: @cyan;
+				color: lighten(@purple, 15%);
 			}
 
 			&.header {
-				color: @cyan;
+				color: lighten(@purple, 15%);
 			}
 		}
 
 		.alignment {
-			color: @cyan;
+			color: lighten(@purple, 15%);
 		}
 	}
 
 	.list {
-		color: fadeout(@cyan, 10%);
+		color: lighten(@purple, 15%);
 	}
 
 	& > .critic.gfm {

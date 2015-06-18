@@ -36,13 +36,7 @@
 }
 
 .keyword {
-	&.operator {
-		color: @violet;
-	}
-
-	&.control {
-		color: @violet;
-	}
+	color: @violet;
 }
 
 .storage {
@@ -102,7 +96,10 @@
 			color: @cyan;
 		}
 
-		&.string,
+		&.string {
+			color: fadeout(@blue, 25%);
+		}
+
 		&.parameters,
 		&.inheritance {
 			color: @silver;
