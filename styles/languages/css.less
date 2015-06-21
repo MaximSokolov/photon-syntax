@@ -2,7 +2,7 @@
 
 .css, .stylus {
 	.property-name {
-		color: @cyan !important;
+		color: @light-purple;
 	}
 
 	.property-value {
@@ -42,11 +42,12 @@
 	}
 
 	.keyword.important {
-		color: @purple;
+		color: @violet;
 	}
 
-	.font-face, .font-face > .punctuation {
-		color: @violet;
+	.keyword.control.font-face,
+	.keyword.control.font-face > .punctuation {
+		color: @cyan;
 	}
 
 	.attribute-selector {
@@ -67,9 +68,17 @@
 		}
 	}
 
+	.keyword.control.html.custom.elements {
+		color: @cyan;
+	}
+
+	.variable.parameter.misc {
+		color: @blue;
+	}
+
 	// e.g. ::first-line in p::first-line
 	.attribute-name.pseudo-element {
-		color: @violet;
+		color: @cyan;
 
 		.punctuation.definition {
 			color: @silver;
@@ -79,12 +88,12 @@
 	.attribute-name.class,
 	.attribute-name.id,
 	.tag.name	{
-		color: @violet;
+		color: @cyan;
 	}
 
 	// e.g. :active in a:active
 	.attribute-name.pseudo-class {
-		color: @violet;
+		color: @cyan;
 
 		.punctuation.definition {
 			color: @silver;
@@ -93,6 +102,6 @@
 
 	// e.g. and, &, >
 	.keyword.operator {
-		color: lighten(@purple, 10%);
+		color: @violet;
 	}
 }

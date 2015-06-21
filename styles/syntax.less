@@ -35,6 +35,14 @@
 	font-style: italic;
 }
 
+.variable.language {
+	color: @light-purple
+}
+
+.variable.readwrite {
+	color: @light-purple
+}
+
 .keyword {
 	color: @violet;
 }
@@ -72,10 +80,6 @@
 	&.other.variable {
 		color: @purple;
 	}
-
-	&.type.property-name {
-		color: @cyan;
-	}
 }
 
 .invalid.illegal {
@@ -100,7 +104,6 @@
 			color: fadeout(@blue, 25%);
 		}
 
-		&.parameters,
 		&.inheritance {
 			color: @silver;
 		}

@@ -2,11 +2,21 @@
 
 .gfm {
 	.heading {
-		font-weight: bold;
-		color: lighten(@cyan, 5%);
+		&.heading-1 {
+				font-size: 120%;
+		}
+		&.heading-2 {
+				font-size: 115%;
+		}
+		&.heading-3,
+		&.heading-4,
+		&.heading-5,
+		&.heading-6 {
+				font-size: 110%;
+		}
 
-		.marker {
-			color: @cyan;
+		&.marker {
+			color: lighten(@purple, 5%);
 			font-weight: bold;
 		}
 	}
@@ -20,11 +30,16 @@
 		}
 	}
 
+	.username,
+	.mention {
+		color: @cyan;
+	}
+
 	.link {
-		color: @silver;
+		color: fadeout(@blue, 25%); // punctuation
 
 		.entity {
-			color: lighten(@blue, 5%);
+			color: @blue;
 		}
 
 		&.underline {
@@ -37,43 +52,37 @@
 		}
 	}
 
-	&.issue {
-		&.tag {
-			color: @cyan;
-		}
-
-		&.number {
-			color: @cyan;
-		}
+	.issue {
+		color: @cyan;
 	}
 
-	& > .support {
+	.support {
 		color: @silver;
 	}
 
 	.table {
 		.border {
-			color: lighten(@purple, 15%);
+			color: @cyan;
 
 			&.outer {
-				color: lighten(@purple, 15%);
+				color: @cyan;
 			}
 
 			&.header {
-				color: lighten(@purple, 15%);
+				color: @cyan;
 			}
 		}
 
 		.alignment {
-			color: lighten(@purple, 15%);
+			color: @cyan;
 		}
 	}
 
 	.list {
-		color: lighten(@purple, 15%);
+		color: @cyan;
 	}
 
-	& > .critic.gfm {
+	.critic.gfm {
 		.marker {
 			&.addition {
 				color: @green;
