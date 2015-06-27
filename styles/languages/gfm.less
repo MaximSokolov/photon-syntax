@@ -2,6 +2,8 @@
 
 .gfm {
 	.heading {
+		color: @cyan;
+
 		&.heading-1 {
 				font-size: 120%;
 		}
@@ -16,7 +18,6 @@
 		}
 
 		&.marker {
-			color: lighten(@purple, 5%);
 			font-weight: bold;
 		}
 	}
@@ -60,26 +61,27 @@
 		color: @silver;
 	}
 
+	@table-color: lighten(@purple, 5%);;
 	.table {
 		.border {
-			color: @cyan;
+			color: @table-color;
 
 			&.outer {
-				color: @cyan;
+				color: @table-color;
 			}
 
 			&.header {
-				color: @cyan;
+				color: @table-color;
 			}
 		}
 
 		.alignment {
-			color: @cyan;
+			color: @table-color;
 		}
 	}
 
 	.list {
-		color: @cyan;
+		color: lighten(@purple, 5%);
 	}
 
 	.critic.gfm {
@@ -88,7 +90,7 @@
 				color: @green;
 			}
 			&.deletion {
-				color: @red;
+				color: @magenta;
 			}
 			&.substitution {
 				color: @orange;
@@ -99,7 +101,7 @@
 			&.highlight {
 				color: @purple;
 				background: @selection;
-				border-radius: 3px
+				border-radius: 3px;
 			}
 		}
 
