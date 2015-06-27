@@ -27,13 +27,13 @@ atom-text-editor, :host {
 
 	// Selected text
 	.selection .region {
-		background: fadeout(lighten(@background, 20%), 50%);
+		background: @selection;
 		border-radius: 3px;
 	}
 
 	// Active line
 	.cursor-line {
-		background-color: @selection;
+		background-color: fadeout(lighten(@background, 10%), 50%);
 	}
 
 	// Line between bracket indentations
