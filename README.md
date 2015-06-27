@@ -1,8 +1,9 @@
-# Photon
+# [Photon](https://atom.io/themes/photon-syntax)
 
 A dark syntax theme for Atom.
 
 ### Screenshots
+
 Using [One dark UI](https://atom.io/themes/one-dark-ui):
 
 ![gfm](https://raw.githubusercontent.com/MaximSokolov/photon-syntax/master/img/ide.png)
