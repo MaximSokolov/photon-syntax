@@ -20,7 +20,6 @@
 
 @text: @white;
 @cursor: darken(@blue, 15%);
-@cursor-pending-mode: @cyan;
 @selection: fadeout(lighten(@background, 20%), 50%);
 @background: @dark-gray;
 
@@ -40,3 +39,15 @@
 @added: @green;
 @modified: @yellow;
 @removed: @magenta;
+
+
+// Plugins variables
+
+// vim-mode
+@cursor-pending-mode: @cyan;
+@normal-mode: @cursor;
+@normal-mode-border: @cyan;
+@replace-mode: @cyan;
+
+// bracket-matcher
+@bracket-matcher: @cyan;

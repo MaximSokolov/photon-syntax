@@ -1,10 +1,11 @@
 @import "../colors";
 
+atom-text-editor,
 atom-text-editor::shadow {
 	.highlight.bracket-matcher {
 		.region {
-			border: 1px solid fadeout(@silver, 25%);
-			background-color: @selection;
+			border-radius: 0px;
+			border-bottom: 1px solid @bracket-matcher;
 		}
 	}
 }
