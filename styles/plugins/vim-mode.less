@@ -1,14 +1,18 @@
 @import "../colors";
 
-&.vim-mode.command-mode::shadow {
+atom-text-editor.vim-mode.normal-mode {
+	&, &::shadow {
 		.cursor {
 			border: 1px solid @cyan !important;
 			background-color: @cursor !important;
 		}
+	}
 }
 
-&.vim-mode.operator-pending-mode::shadow {
+atom-text-editor.vim-mode.operator-pending-mode {
+	&, &::shadow {
 		.cursor {
 			background-color: @cursor-pending-mode !important;
 		}
+	}
 }
