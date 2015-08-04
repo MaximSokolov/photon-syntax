@@ -9,12 +9,12 @@
 		color: @silver;
 	}
 
-	// e.g. center, screen, serif
+	// center, screen, serif
 	.constant {
 		color: @white;
 	}
 
-	// e.g. url
+	// url
 	.function {
 		color: @text;
 
@@ -23,14 +23,19 @@
 		}
 	}
 
-	// e.g. 2.5em, 30px
+	// 2.5em, 30px
 	.rgb-value,
 	.numeric,
 	.unit {
 		color: @aqua;
 	}
 
-	// e.g. @import, @font-face
+	// &
+	.entity.other.attribute-name.parent-selector {
+			color: @violet;
+	}
+
+	// @import, @font-face
 	.punctuation.definition.keyword,
 	.keyword.control {
 		color: @violet;
@@ -58,12 +63,12 @@
 			color: @silver;
 		}
 
-		// e.g. 'href' in 'a[href="foo"]' or 'lang' in 'span[lang]'
+		// 'href' in 'a[href="foo"]' or 'lang' in 'span[lang]'
 		.entity.other.attribute-name.attribute {
 			color: @text;
 		}
 
-		// e.g. '^=' in 'a[href^="https"]'
+		// '^=' in 'a[href^="https"]'
 		.punctuation.separator.operator {
 			color: @violet;
 		}
@@ -77,7 +82,7 @@
 		color: @blue;
 	}
 
-	// e.g. ::first-line in p::first-line
+	// ::first-line in p::first-line
 	.attribute-name.pseudo-element {
 		color: @cyan;
 
@@ -92,7 +97,7 @@
 		color: @cyan;
 	}
 
-	// e.g. :active in a:active
+	// :active in a:active
 	.attribute-name.pseudo-class {
 		color: @cyan;
 
@@ -101,7 +106,7 @@
 		}
 	}
 
-	// e.g. and, &, >
+	// and, >
 	.keyword.operator {
 		color: @violet;
 	}
