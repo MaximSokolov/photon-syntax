@@ -19,16 +19,20 @@ atom-text-editor, :host {
 	}
 
 	// Active line
-	.cursor-line {
-		background-color: fadeout(lighten(@background, 10%), 50%);
+	&, &::shadow {
+		&.is-focused .cursor-line {
+			background-color: fadeout(lighten(@background, 10%), 50%);
+		}
 	}
 
 	// Line between bracket indentations
 	.indent-guide {
 		color: @indent-guide;
 	}
-	&::shadow .cursor-line .indent-guide {
-		color: @light-gray;
+	&, &::shadow {
+		.cursor-line .indent-guide {
+			color: @light-gray;
+		}
 	}
 
 	.invisible-character {
