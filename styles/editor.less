@@ -27,8 +27,10 @@ atom-text-editor, :host {
 	.indent-guide {
 		color: @indent-guide;
 	}
-	&::shadow .cursor-line .indent-guide {
-		color: @light-gray;
+	&, &::shadow {
+		.cursor-line .indent-guide {
+			color: @light-gray;
+		}
 	}
 
 	.invisible-character {
