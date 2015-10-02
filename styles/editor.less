@@ -18,6 +18,10 @@ atom-text-editor, :host {
 	&, &::shadow {
 		.is-focused .cursor-line {
 			background-color: fadeout(lighten(@background, 10%), 50%);
+
+			&.line-number {
+				background-color: @background;
+			}
 		}
 	}
 
