@@ -2,6 +2,14 @@
 
 A dark syntax theme for [Atom](https://atom.io/).
 
+## Installation
+
+```
+apm install photon-syntax
+```
+
+Or go to __Settings > Install__ and search for `photon-syntax`
+
 ### Screenshots
 
 Using [One dark UI](https://atom.io/themes/one-dark-ui):
