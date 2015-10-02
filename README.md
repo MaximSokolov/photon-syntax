@@ -12,8 +12,6 @@ Or go to __Settings > Install__ and search for `photon-syntax`
 
 ### Screenshots
 
-Using [One dark UI](https://atom.io/themes/one-dark-ui):
-
 ![gfm](https://raw.githubusercontent.com/MaximSokolov/photon-syntax/master/img/ide.png)
 
 ![html](https://raw.githubusercontent.com/MaximSokolov/photon-syntax/master/img/html.png)
@@ -27,3 +25,5 @@ Using [One dark UI](https://atom.io/themes/one-dark-ui):
 ![python](https://raw.githubusercontent.com/MaximSokolov/photon-syntax/master/img/python.png)
 
 ![comments](https://raw.githubusercontent.com/MaximSokolov/photon-syntax/master/img/comments.png)
+
+> [One dark UI](https://atom.io/themes/one-dark-ui). The font is [Meslo LG S](https://github.com/andreberg/Meslo-Font)
