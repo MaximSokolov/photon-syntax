@@ -1,6 +1,6 @@
 # [Photon](https://atom.io/themes/photon-syntax)
 
-A dark syntax theme for Atom.
+A dark syntax theme for [Atom](https://atom.io/).
 
 ### Screenshots
 
