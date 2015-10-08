@@ -1,6 +1,17 @@
 @import "../colors";
 
 .coffee {
+
+	.entity {
+		color: @text;
+
+		&.name.class,
+		&.name.type,
+		&.inherited-class {
+			color: @cyan;
+		}
+	}
+
 	.embedded {
 		color: @light-purple;
 		font-style: italic;
