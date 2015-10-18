@@ -52,39 +52,25 @@ atom-text-editor, :host {
 		}
 	}
 
-	// Line numbers
-	.gutter {
-		color: @gutter-text;
-
-		// Selected block
-		.line-number.cursor-line {
-			background-color: transparent;
-			color: @gutter-text-selected;
-		}
-
-		// Active line
-		.line-number.cursor-line-no-selection {
-			color: @gutter-text-selected;
-		}
-
-		.line-number.folded, .line-number:after, .fold-marker:after {
-			color: @blue;
-		}
-
-		.git-line-added {
+	.gutter-container {
+		.line-number {
 			color: @gutter-text;
 
-			&.cursor-line {
+			&.cursor-line, &.cursor-line-no-selection {
+				color: @gutter-text-selected;
+			}
+
+			&.folded {
+				color: @blue;
+			}
+		}
+
+		.git-line-added.cursor-line {
 				color: fadeout(@green, 25%);
-			}
 		}
 
-		.git-line-modified {
-			color: @gutter-text;
-
-			&.cursor-line {
+		.git-line-modified.cursor-line {
 				color: fadeout(@yellow, 25%);
-			}
 		}
 	}
 
