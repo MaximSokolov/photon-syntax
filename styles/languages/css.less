@@ -1,10 +1,5 @@
 @import "../colors";
 
-// empty braces?
-.less.meta.brace.curly {
-	color: @silver;
-}
-
 .css, .stylus {
 	.property-name {
 		color: @light-purple;
@@ -14,9 +9,10 @@
 		color: @silver;
 	}
 
-	// center, screen, serif
-	.constant {
-		color: @white;
+	.variable,
+	.constant.font-name,
+	.constant.property-value {
+		color: @text;
 	}
 
 	// url
@@ -36,6 +32,7 @@
 	}
 
 	// &
+	.entity.name.tag.reference,
 	.entity.other.attribute-name.parent-selector {
 			color: @violet;
 	}
@@ -46,7 +43,8 @@
 		color: @violet;
 	}
 
-	// {} ;
+	// '{', '}', ';'
+	.meta.brace.curly,
 	.punctuation.terminator.rule,
 	.punctuation.section.property-list {
 			color: @silver;
@@ -111,8 +109,8 @@
 		}
 	}
 
-	// and, >
-	.keyword.operator {
+	.keyword.operator,
+	.support.constant.mathematical-symbols {
 		color: @violet;
 	}
 }
