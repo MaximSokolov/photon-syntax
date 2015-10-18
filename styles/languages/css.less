@@ -1,10 +1,5 @@
 @import "../colors";
 
-// empty braces?
-.less.meta.brace.curly {
-	color: @silver;
-}
-
 .css, .stylus {
 	.property-name {
 		color: @light-purple;
@@ -46,7 +41,8 @@
 		color: @violet;
 	}
 
-	// {} ;
+	// '{', '}', ';'
+	.meta.brace.curly,
 	.punctuation.terminator.rule,
 	.punctuation.section.property-list {
 			color: @silver;
