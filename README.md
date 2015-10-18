@@ -12,8 +12,6 @@ Or go to __Settings > Install__ and search for `photon-syntax`
 
 ### Screenshots
 
-![gfm](https://raw.githubusercontent.com/MaximSokolov/photon-syntax/master/img/ide.png)
-
 ![html](https://raw.githubusercontent.com/MaximSokolov/photon-syntax/master/img/html.png)
 
 ![css](https://raw.githubusercontent.com/MaximSokolov/photon-syntax/master/img/css.png)
