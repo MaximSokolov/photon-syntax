@@ -1,25 +1,29 @@
 @import "../colors.less";
 
 .diff {
-	.punctuation.from-file {
-		color: @cyan;
-	}
-
-	.punctuation.to-file {
-		color: @cyan;
-	}
-
-	&.header {
+	.header {
 		font-weight: bold;
-		color: @blue !important;
+		color: @blue;
+
+		.punctuation.definition {
+			&.from-file {
+				color: @cyan;
+			}
+
+			&.to-file {
+				color: @cyan;
+			}
+		}
 	}
 
-	&.range {
-		color: @silver;
-	}
+	.range {
+		.punctuation.definition {
+			color: @silver;
+		}
 
-	&.line-number {
-		color: @silver;
-		font-weight: bold;
+		.line-number {
+			color: @silver;
+			font-weight: bold;
+		}
 	}
 }
