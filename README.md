@@ -1,6 +1,6 @@
 # [Photon](https://atom.io/themes/photon-syntax)
 
-A dark syntax theme for [Atom](https://atom.io/).
+A dark syntax theme for [Atom](https://atom.io/)
 
 ## Installation
 
@@ -24,4 +24,4 @@ Or go to __Settings > Install__ and search for `photon-syntax`
 
 ![comments](https://raw.githubusercontent.com/MaximSokolov/photon-syntax/master/img/comments.png)
 
-> [One dark UI](https://atom.io/themes/one-dark-ui). The font is [Meslo LG S](https://github.com/andreberg/Meslo-Font)
+> _[One dark UI](https://atom.io/themes/one-dark-ui). The font is [Meslo LG S](https://github.com/andreberg/Meslo-Font)_
