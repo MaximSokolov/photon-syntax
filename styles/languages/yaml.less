@@ -1,15 +1,27 @@
 @import "../colors";
 
 .yaml {
-	.tag {
-		color: @blue !important;
-	}
-
-	.string {
+	.string, {
 		color: @text;
+
+		.punctuation.definition {
+			color: @silver;
+		}
 	}
 
 	.numeric {
 		color: @cyan;
+	}
+
+	.punctuation.separator.key-value {
+		color: @violet;
+	}
+
+	.punctuation.definition.entry {
+		color: lighten(@purple, 5%);
+	}
+
+	.constant.numeric {
+		color: @aqua;
 	}
 }
