@@ -15,7 +15,11 @@
 		color: @text;
 	}
 
-	// url
+	.separator.key-value {
+		color: @violet;
+	}
+
+	// e.g. url
 	.function {
 		color: @text;
 
@@ -24,11 +28,20 @@
 		}
 	}
 
-	// 2.5em, 30px
-	.rgb-value,
-	.numeric,
-	.unit {
+	.numeric {
 		color: @aqua;
+
+		.keyword.other.unit {
+			color: fadeout(@aqua, 15%);
+		}
+	}
+
+	.rgb-value {
+		color: desaturate(@aqua, 15%);
+	}
+
+	.unit {
+		color: fadeout(@aqua, 15%);
 	}
 
 	// &
@@ -60,8 +73,6 @@
 	}
 
 	.attribute-selector {
-		// HACK: There is no scope for ']' in attribute-selector
-		color: @silver;
 		.punctuation.definition.entity {
 			color: @silver;
 		}
@@ -90,7 +101,7 @@
 		color: @cyan;
 
 		.punctuation.definition {
-			color: @silver;
+			color: lighten(@cyan, 20%);
 		}
 	}
 
@@ -98,6 +109,10 @@
 	.attribute-name.id,
 	.tag.name	{
 		color: @cyan;
+
+		.punctuation.definition {
+			color: fadeout(@cyan, 25%);
+		}
 	}
 
 	// :active in a:active
@@ -105,8 +120,12 @@
 		color: @cyan;
 
 		.punctuation.definition {
-			color: @silver;
+			color: lighten(@cyan, 20%);
 		}
+	}
+
+	.support.constant.color {
+		color: @text;
 	}
 
 	.keyword.operator,
