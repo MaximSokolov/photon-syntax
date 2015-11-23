@@ -1,98 +1,98 @@
 @import "../colors";
 
 .gfm {
-	.heading {
-		color: @cyan;
+  .heading {
+    color: @cyan;
 
-		&.marker {
-			font-weight: bold;
-		}
-	}
+    &.marker {
+      font-weight: bold;
+    }
+  }
 
-	.quote {
-		color: @text;
+  .quote {
+    color: @text;
 
-		&.support {
-				color: @light-gray;
-		}
-	}
+    &.support {
+        color: @light-gray;
+    }
+  }
 
-	.username,
-	.mention {
-		color: @cyan;
-	}
+  .username,
+  .mention {
+    color: @cyan;
+  }
 
-	.link {
-		color: fadeout(@blue, 25%); // punctuation
+  .link {
+    color: fadeout(@blue, 25%); // punctuation
 
-		.entity {
-			color: @blue;
-		}
+    .entity {
+      color: @blue;
+    }
 
-		&.underline {
-			color: @silver;
-			border-bottom: none;
+    &.underline {
+      color: @silver;
+      border-bottom: none;
 
-			.punctuation.definition {
-				color: @silver;
-			}
-		}
-	}
+      .punctuation.definition {
+        color: @silver;
+      }
+    }
+  }
 
-	.issue {
-		color: @cyan;
-	}
+  .issue {
+    color: @cyan;
+  }
 
-	.support {
-		color: @silver;
-	}
+  .support {
+    color: @silver;
+  }
 
-	@table-color: lighten(@purple, 5%);;
-	.table {
-		.border {
-			color: @table-color;
+  @table-color: lighten(@purple, 5%);;
+  .table {
+    .border {
+      color: @table-color;
 
-			&.outer {
-				color: @table-color;
-			}
+      &.outer {
+        color: @table-color;
+      }
 
-			&.header {
-				color: @table-color;
-			}
-		}
+      &.header {
+        color: @table-color;
+      }
+    }
 
-		.alignment {
-			color: @table-color;
-		}
-	}
+    .alignment {
+      color: @table-color;
+    }
+  }
 
-	.list {
-		color: lighten(@purple, 5%);
-	}
+  .list {
+    color: lighten(@purple, 5%);
+  }
 
-	.critic.gfm {
-		.marker {
-			&.addition {
-				color: @green;
-			}
-			&.deletion {
-				color: @magenta;
-			}
-			&.substitution {
-				color: @orange;
-			}
-			&.comment {
-				color: @blue;
-			}
-			&.highlight {
-				color: @purple;
-				background: @selection;
-				border-radius: 3px;
-			}
-		}
+  .critic.gfm {
+    .marker {
+      &.addition {
+        color: @green;
+      }
+      &.deletion {
+        color: @magenta;
+      }
+      &.substitution {
+        color: @orange;
+      }
+      &.comment {
+        color: @blue;
+      }
+      &.highlight {
+        color: @purple;
+        background: @selection;
+        border-radius: 3px;
+      }
+    }
 
-		.operator {
-			color: @violet;
-		}
-	}
+    .operator {
+      color: @violet;
+    }
+  }
 }

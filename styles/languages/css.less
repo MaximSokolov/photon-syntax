@@ -1,135 +1,135 @@
 @import "../colors";
 
 .css, .stylus {
-	.property-name {
-		color: @light-purple;
-	}
+  .property-name {
+    color: @light-purple;
+  }
 
-	.property-value {
-		color: @silver;
-	}
+  .property-value {
+    color: @silver;
+  }
 
-	.variable,
-	.constant.font-name,
-	.constant.property-value {
-		color: @text;
-	}
+  .variable,
+  .constant.font-name,
+  .constant.property-value {
+    color: @text;
+  }
 
-	.separator.key-value {
-		color: @violet;
-	}
+  .separator.key-value {
+    color: @violet;
+  }
 
-	// e.g. url
-	.function {
-		color: @text;
+  // e.g. url
+  .function {
+    color: @text;
 
-		&.punctuation {
-			color: @silver;
-		}
-	}
+    &.punctuation {
+      color: @silver;
+    }
+  }
 
-	.numeric {
-		color: @aqua;
+  .numeric {
+    color: @aqua;
 
-		.keyword.other.unit {
-			color: fadeout(@aqua, 15%);
-		}
-	}
+    .keyword.other.unit {
+      color: fadeout(@aqua, 15%);
+    }
+  }
 
-	.rgb-value {
-		color: desaturate(@aqua, 15%);
-	}
+  .rgb-value {
+    color: desaturate(@aqua, 15%);
+  }
 
-	.unit {
-		color: fadeout(@aqua, 15%);
-	}
+  .unit {
+    color: fadeout(@aqua, 15%);
+  }
 
-	// &
-	.entity.name.tag.reference,
-	.entity.other.attribute-name.parent-selector {
-			color: @violet;
-	}
+  // &
+  .entity.name.tag.reference,
+  .entity.other.attribute-name.parent-selector {
+      color: @violet;
+  }
 
-	// @import, @font-face
-	.punctuation.definition.keyword,
-	.keyword.control {
-		color: @violet;
-	}
+  // @import, @font-face
+  .punctuation.definition.keyword,
+  .keyword.control {
+    color: @violet;
+  }
 
-	// '{', '}', ';'
-	.meta.brace.curly,
-	.punctuation.terminator.rule,
-	.punctuation.section.property-list {
-			color: @silver;
-	}
+  // '{', '}', ';'
+  .meta.brace.curly,
+  .punctuation.terminator.rule,
+  .punctuation.section.property-list {
+      color: @silver;
+  }
 
-	.keyword.important {
-		color: @violet;
-	}
+  .keyword.important {
+    color: @violet;
+  }
 
-	.keyword.control.font-face,
-	.keyword.control.font-face > .punctuation {
-		color: @cyan;
-	}
+  .keyword.control.font-face,
+  .keyword.control.font-face > .punctuation {
+    color: @cyan;
+  }
 
-	.attribute-selector {
-		.punctuation.definition.entity {
-			color: @silver;
-		}
+  .attribute-selector {
+    .punctuation.definition.entity {
+      color: @silver;
+    }
 
-		// 'href' in 'a[href="foo"]' or 'lang' in 'span[lang]'
-		.entity.other.attribute-name.attribute {
-			color: @text;
-		}
+    // 'href' in 'a[href="foo"]' or 'lang' in 'span[lang]'
+    .entity.other.attribute-name.attribute {
+      color: @text;
+    }
 
-		// '^=' in 'a[href^="https"]'
-		.punctuation.separator.operator {
-			color: @violet;
-		}
-	}
+    // '^=' in 'a[href^="https"]'
+    .punctuation.separator.operator {
+      color: @violet;
+    }
+  }
 
-	.keyword.control.html.custom.elements {
-		color: @cyan;
-	}
+  .keyword.control.html.custom.elements {
+    color: @cyan;
+  }
 
-	.variable.parameter.misc {
-		color: @blue;
-	}
+  .variable.parameter.misc {
+    color: @blue;
+  }
 
-	// ::first-line in p::first-line
-	.attribute-name.pseudo-element {
-		color: @cyan;
+  // ::first-line in p::first-line
+  .attribute-name.pseudo-element {
+    color: @cyan;
 
-		.punctuation.definition {
-			color: lighten(@cyan, 20%);
-		}
-	}
+    .punctuation.definition {
+      color: lighten(@cyan, 20%);
+    }
+  }
 
-	.attribute-name.class,
-	.attribute-name.id,
-	.tag.name	{
-		color: @cyan;
+  .attribute-name.class,
+  .attribute-name.id,
+  .tag.name  {
+    color: @cyan;
 
-		.punctuation.definition {
-			color: fadeout(@cyan, 25%);
-		}
-	}
+    .punctuation.definition {
+      color: fadeout(@cyan, 25%);
+    }
+  }
 
-	// :active in a:active
-	.attribute-name.pseudo-class {
-		color: @cyan;
+  // :active in a:active
+  .attribute-name.pseudo-class {
+    color: @cyan;
 
-		.punctuation.definition {
-			color: lighten(@cyan, 20%);
-		}
-	}
+    .punctuation.definition {
+      color: lighten(@cyan, 20%);
+    }
+  }
 
-	.support.constant.color {
-		color: @text;
-	}
+  .support.constant.color {
+    color: @text;
+  }
 
-	.keyword.operator,
-	.support.constant.mathematical-symbols {
-		color: @violet;
-	}
+  .keyword.operator,
+  .support.constant.mathematical-symbols {
+    color: @violet;
+  }
 }

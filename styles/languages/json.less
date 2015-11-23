@@ -1,36 +1,36 @@
 @import "../colors";
 
 .json {
-	.punctuation.dictionary {
-		&.definition.begin,
-		&.definition.end,
-		&.separator.key-value,
-		&.separator.pair {
-			color: @silver;
-		}
+  .punctuation.dictionary {
+    &.definition.begin,
+    &.definition.end,
+    &.separator.key-value,
+    &.separator.pair {
+      color: @silver;
+    }
 
-		&.separator.key-value {
-			color: @violet;
-		}
-	}
+    &.separator.key-value {
+      color: @violet;
+    }
+  }
 
-	.structure.dictionary > .string.quoted.double {
-		color: @cyan;
+  .structure.dictionary > .string.quoted.double {
+    color: @cyan;
 
-		.punctuation.definition.string {
-			color: fadeout(@cyan, 25%);
-		}
-	}
+    .punctuation.definition.string {
+      color: fadeout(@cyan, 25%);
+    }
+  }
 
-	.structure.dictionary.value > .string.quoted.double {
-		color: @text;
+  .structure.dictionary.value > .string.quoted.double {
+    color: @text;
 
-		.punctuation.definition.string {
-			color: fadeout(@text, 25%);
-		}
-	}
+    .punctuation.definition.string {
+      color: fadeout(@text, 25%);
+    }
+  }
 
-	.numeric {
-		color: @aqua;
-	}
+  .numeric {
+    color: @aqua;
+  }
 }

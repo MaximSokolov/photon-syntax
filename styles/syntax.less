@@ -5,142 +5,142 @@
 // http://manual.macromates.com/en/language_grammars#naming_conventions
 
 .comment {
-	font-style: italic;
-	color: @light-gray;
+  font-style: italic;
+  color: @light-gray;
 }
 
 .string {
-	color: @blue;
+  color: @blue;
 
-	&.regexp {
-		color: @purple;
-	}
+  &.regexp {
+    color: @purple;
+  }
 }
 
 .constant {
-	&.numeric {
-		color: @cyan;
-	}
+  &.numeric {
+    color: @cyan;
+  }
 
-	&.language {
-		color: @cyan;
-	}
+  &.language {
+    color: @cyan;
+  }
 
-	&.character {
-		color: @purple;
-	}
+  &.character {
+    color: @purple;
+  }
 }
 
 .variable.parameter {
-	font-style: italic;
+  font-style: italic;
 }
 
 .variable.language {
-	color: @light-purple
+  color: @light-purple
 }
 
 .variable.readwrite {
-	color: @light-purple
+  color: @light-purple
 }
 
 .keyword {
-	color: @violet;
+  color: @violet;
 }
 
 .storage {
-	color: @violet;
+  color: @violet;
 
-	&.fixme, &.xxx, &.hack, {
-		color: @magenta;
-	}
+  &.fixme, &.xxx, &.hack, {
+    color: @magenta;
+  }
 
-	&.todo, &.note, &.idea, &.review {
-		color: @purple;
-	}
+  &.todo, &.note, &.idea, &.review {
+    color: @purple;
+  }
 
-	&.changed {
-		color: @yellow;
-	}
+  &.changed {
+    color: @yellow;
+  }
 }
 
 .entity {
-	&.name {
-		color: @cyan;
-	}
+  &.name {
+    color: @cyan;
+  }
 
-	&.attribute-name {
-		color: @silver;
-	}
+  &.attribute-name {
+    color: @silver;
+  }
 }
 
 .meta.function-call, .meta.method-call {
-	.entity.name.function {
-		color: @text;
-	}
+  .entity.name.function {
+    color: @text;
+  }
 }
 
 .support {
-	&.variable {
-		color: @light-purple;
-	}
+  &.variable {
+    color: @light-purple;
+  }
 }
 
 .invalid.illegal {
-		background: fadeout(@red, 80%);
-		color: lighten(@red, 15%);
+    background: fadeout(@red, 80%);
+    color: lighten(@red, 15%);
 }
 
 .punctuation {
-	&.definition {
-		&.method-parameters {
-			color: @text;
-		}
+  &.definition {
+    &.method-parameters {
+      color: @text;
+    }
 
-		&.tag {
-			color: fadeout(@cyan, 25%);
-		}
+    &.tag {
+      color: fadeout(@cyan, 25%);
+    }
 
-		&.string {
-			color: fadeout(@blue, 25%);
-		}
+    &.string {
+      color: fadeout(@blue, 25%);
+    }
 
-		&.inheritance {
-			color: @silver;
-		}
-	}
+    &.inheritance {
+      color: @silver;
+    }
+  }
 }
 
 .markup {
-	&.underline {
-		border-bottom: thin solid;
-	}
+  &.underline {
+    border-bottom: thin solid;
+  }
 
-	&.bold {
-		font-weight: bold;
-	}
+  &.bold {
+    font-weight: bold;
+  }
 
-	&.italic,
-	&.quote {
-		font-style: italic;
-	}
+  &.italic,
+  &.quote {
+    font-style: italic;
+  }
 
-	&.strike {
-		text-decoration: line-through;
-	}
+  &.strike {
+    text-decoration: line-through;
+  }
 
-	&.deleted {
-		color: @orange;
-	}
+  &.deleted {
+    color: @orange;
+  }
 
-	&.changed {
-		color: @yellow;
-	}
+  &.changed {
+    color: @yellow;
+  }
 
-	&.inserted {
-		color: @green;
-	}
+  &.inserted {
+    color: @green;
+  }
 
-	&.raw {
-		color: @silver;
-	}
+  &.raw {
+    color: @silver;
+  }
 }

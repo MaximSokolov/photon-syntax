@@ -1,34 +1,34 @@
 @import "../colors";
 
 .coffee {
-	// Color function name only in functions' declarations
-	.meta.function {
-		.entity.name.function {
-			color: @cyan;
-		}
-	}
+  // Color function name only in functions' declarations
+  .meta.function {
+    .entity.name.function {
+      color: @cyan;
+    }
+  }
 
-	.entity {
-		color: @text;
+  .entity {
+    color: @text;
 
-		&.name.class,
-		&.name.type,
-		&.inherited-class {
-			color: @cyan;
-		}
-	}
+    &.name.class,
+    &.name.type,
+    &.inherited-class {
+      color: @cyan;
+    }
+  }
 
-	.punctuation.separator.key-value {
-		color: @violet;
-	}
+  .punctuation.separator.key-value {
+    color: @violet;
+  }
 
-	.embedded {
-		color: @light-purple;
-		font-style: italic;
+  .embedded {
+    color: @light-purple;
+    font-style: italic;
 
-		.punctuation.section {
-			color: darken(@light-purple, 10%);
-			font-style: normal;
-		}
-	}
+    .punctuation.section {
+      color: darken(@light-purple, 10%);
+      font-style: normal;
+    }
+  }
 }

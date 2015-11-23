@@ -1,76 +1,76 @@
 @import "colors";
 
 atom-text-editor, :host {
-	background: @background;
-	color: @text;
+  background: @background;
+  color: @text;
 
-	.cursor {
-		border-left: 2px solid @cursor;
-	}
+  .cursor {
+    border-left: 2px solid @cursor;
+  }
 
-	// Selected text
-	.selection .region {
-		background: @selection;
-		border-radius: 3px;
-	}
+  // Selected text
+  .selection .region {
+    background: @selection;
+    border-radius: 3px;
+  }
 
-	// Active line
-	&, &::shadow {
-		.is-focused .line.cursor-line {
-			background-color: fadeout(lighten(@background, 10%), 50%);
-		}
-	}
+  // Active line
+  &, &::shadow {
+    .is-focused .line.cursor-line {
+      background-color: fadeout(lighten(@background, 10%), 50%);
+    }
+  }
 
-	// Line between bracket indentations
-	.indent-guide {
-		color: @indent-guide;
-	}
-	&, &::shadow {
-		.cursor-line .indent-guide {
-			color: @light-gray;
-		}
-	}
+  // Line between bracket indentations
+  .indent-guide {
+    color: @indent-guide;
+  }
+  &, &::shadow {
+    .cursor-line .indent-guide {
+      color: @light-gray;
+    }
+  }
 
-	.invisible-character {
-		color: @invisible-character;
-		opacity: 0.4;
-	}
+  .invisible-character {
+    color: @invisible-character;
+    opacity: 0.4;
+  }
 
-	// Line that designates where text will wrap
-	.wrap-guide {
-		color: @wrap-guide;
-	}
+  // Line that designates where text will wrap
+  .wrap-guide {
+    color: @wrap-guide;
+  }
 
-	.search-results {
-		.marker .region {
-			background: transparent;
-			border: @result-marker;
-		}
+  .search-results {
+    .marker .region {
+      background: transparent;
+      border: @result-marker;
+    }
 
-		.marker.current-result .region {
-			border: @result-marker-selected;
-		}
-	}
+    .marker.current-result .region {
+      border: @result-marker-selected;
+    }
+  }
 
-	.gutter-container {
-		.line-number {
-			color: @gutter-text;
+  .gutter-container {
+    .line-number {
+      color: @gutter-text;
 
-			&.cursor-line, &.cursor-line-no-selection {
-				color: @gutter-text-selected;
-			}
+      &.cursor-line, &.cursor-line-no-selection {
+        color: @gutter-text-selected;
+      }
 
-			&.folded {
-				color: @blue;
-			}
-		}
+      &.folded {
+        color: @blue;
+      }
+    }
 
-		.git-line-added.cursor-line {
-				color: fadeout(@green, 25%);
-		}
+    .git-line-added.cursor-line {
+        color: fadeout(@green, 25%);
+    }
 
-		.git-line-modified.cursor-line {
-				color: fadeout(@yellow, 25%);
-		}
-	}
+    .git-line-modified.cursor-line {
+        color: fadeout(@yellow, 25%);
+    }
+  }
 }
