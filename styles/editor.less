@@ -14,11 +14,8 @@ atom-text-editor, :host {
     border-radius: 3px;
   }
 
-  // Active line
-  &, &::shadow {
-    .is-focused .line.cursor-line {
-      background-color: fadeout(lighten(@background, 10%), 50%);
-    }
+  .line.cursor-line {
+    background-color: fadeout(lighten(@background, 10%), 65%);
   }
 
   // Line between bracket indentations
