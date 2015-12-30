@@ -2,12 +2,11 @@
 
 .html {
   .meta.tag {
-    color: @silver;
+    color: fadeout(@silver, 15%);
   }
 
-  .meta.tag.sgml.doctype,
-  .meta.tag.sgml > .punctuation.definition.tag {
-    font-style: italic;
+  .tag.sgml.doctype,
+  .tag.sgml .punctuation.definition {
     color: @light-gray;
   }
 }
