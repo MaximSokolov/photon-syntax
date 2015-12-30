@@ -1,11 +1,11 @@
 @import "../colors";
 
-.css, .stylus {
+.css, .stylus, .sass {
   .property-name {
     color: @light-purple;
   }
 
-  .property-value {
+  .meta.property-name, .meta.property-value {
     color: @silver;
   }
 
@@ -28,20 +28,17 @@
     }
   }
 
+  .rgb-value,
   .numeric {
-    color: @aqua;
+    color: @light-blue;
 
-    .keyword.other.unit {
-      color: fadeout(@aqua, 15%);
+    .punctuation.definition.constant {
+      color: fadeout(@light-blue, 15%);
     }
   }
 
-  .rgb-value {
-    color: desaturate(@aqua, 15%);
-  }
-
-  .unit {
-    color: fadeout(@aqua, 15%);
+  .keyword.other.unit {
+    color: fadeout(@light-blue, 15%);
   }
 
   // &
@@ -56,11 +53,12 @@
     color: @violet;
   }
 
-  // '{', '}', ';'
-  .meta.brace.curly,
+  // '{', '}', ';', ','
+  .meta.brace,
   .punctuation.terminator.rule,
-  .punctuation.section.property-list {
-      color: @silver;
+  .punctuation.section.property-list,
+  .punctuation.separator.list {
+    color: lighten(@silver, 10%);
   }
 
   .keyword.important {
@@ -74,7 +72,7 @@
 
   .attribute-selector {
     .punctuation.definition.entity {
-      color: @silver;
+      color: lighten(@silver, 10%);
     }
 
     // 'href' in 'a[href="foo"]' or 'lang' in 'span[lang]'
@@ -88,23 +86,23 @@
     }
   }
 
-  .keyword.control.html.custom.elements {
-    color: @cyan;
-  }
-
   .variable.parameter.misc {
     color: @blue;
   }
 
   // ::first-line in p::first-line
-  .attribute-name.pseudo-element {
-    color: @cyan;
+  // :active in a:active
+  .attribute-name {
+    &.pseudo-element, &.pseudo-class {
+      color: @cyan;
 
-    .punctuation.definition {
-      color: lighten(@cyan, 20%);
+      .punctuation.definition {
+        color: fadeout(@cyan, 25%);
+      }
     }
   }
 
+  .keyword.control.html,
   .attribute-name.class,
   .attribute-name.id,
   .tag.name  {
@@ -112,15 +110,6 @@
 
     .punctuation.definition {
       color: fadeout(@cyan, 25%);
-    }
-  }
-
-  // :active in a:active
-  .attribute-name.pseudo-class {
-    color: @cyan;
-
-    .punctuation.definition {
-      color: lighten(@cyan, 20%);
     }
   }
 
