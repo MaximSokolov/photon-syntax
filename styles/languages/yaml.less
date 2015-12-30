@@ -5,12 +5,8 @@
     color: @text;
 
     .punctuation.definition {
-      color: @silver;
+      color: lighten(@silver, 10%);
     }
-  }
-
-  .numeric {
-    color: @cyan;
   }
 
   .punctuation.separator.key-value {
@@ -19,9 +15,5 @@
 
   .punctuation.definition.entry {
     color: lighten(@purple, 5%);
-  }
-
-  .constant.numeric {
-    color: @aqua;
   }
 }
