@@ -5,7 +5,7 @@
     color: @cyan;
 
     &.marker {
-      font-weight: bold;
+      color: fadeout(@cyan, 25%);
     }
   }
 
@@ -19,7 +19,7 @@
 
   .username,
   .mention {
-    color: @cyan;
+    color: @light-blue;
   }
 
   .link {
@@ -30,8 +30,7 @@
     }
 
     &.underline {
-      color: @silver;
-      border-bottom: none;
+      color: lighten(@silver, 10%);
 
       .punctuation.definition {
         color: @silver;
@@ -47,27 +46,12 @@
     color: @silver;
   }
 
-  @table-color: lighten(@purple, 5%);;
-  .table {
-    .border {
-      color: @table-color;
-
-      &.outer {
-        color: @table-color;
-      }
-
-      &.header {
-        color: @table-color;
-      }
-    }
-
-    .alignment {
-      color: @table-color;
-    }
+  .table .border {
+    color: @light-purple;
   }
 
   .list {
-    color: lighten(@purple, 5%);
+    color: @violet;
   }
 
   .critic.gfm {
@@ -75,15 +59,19 @@
       &.addition {
         color: @green;
       }
+
       &.deletion {
         color: @magenta;
       }
+
       &.substitution {
         color: @orange;
       }
+
       &.comment {
         color: @blue;
       }
+
       &.highlight {
         color: @purple;
         background: @selection;
