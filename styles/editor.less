@@ -18,14 +18,8 @@ atom-text-editor, :host {
     background-color: fadeout(lighten(@background, 10%), 65%);
   }
 
-  // Line between bracket indentations
   .indent-guide {
     color: @indent-guide;
-  }
-  &, &::shadow {
-    .cursor-line .indent-guide {
-      color: @light-gray;
-    }
   }
 
   .invisible-character {
@@ -33,7 +27,6 @@ atom-text-editor, :host {
     opacity: 0.4;
   }
 
-  // Line that designates where text will wrap
   .wrap-guide {
     color: @wrap-guide;
   }
@@ -49,7 +42,7 @@ atom-text-editor, :host {
     }
   }
 
-  .gutter-container {
+  .gutter {
     .line-number {
       color: @gutter-text;
 
