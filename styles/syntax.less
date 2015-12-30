@@ -15,15 +15,19 @@
   &.regexp {
     color: @purple;
   }
+
+  .punctuation.definition {
+    color: fadeout(@blue, 25%);
+  }
 }
 
 .constant {
   &.numeric {
-    color: @cyan;
+    color: @light-blue;
   }
 
   &.language {
-    color: @cyan;
+    color: @light-blue;
   }
 
   &.character {
@@ -36,11 +40,11 @@
 }
 
 .variable.language {
-  color: @light-purple
+  color: @light-purple;
 }
 
 .variable.readwrite {
-  color: @light-purple
+  color: @light-purple;
 }
 
 .keyword {
@@ -54,7 +58,7 @@
     color: @magenta;
   }
 
-  &.todo, &.note, &.idea, &.review {
+  &.todo, &.note, &.idea, &.review, &.nb {
     color: @purple;
   }
 
@@ -69,7 +73,7 @@
   }
 
   &.attribute-name {
-    color: @silver;
+    color: lighten(@silver, 10%);
   }
 }
 
@@ -85,9 +89,9 @@
   }
 }
 
-.invalid.illegal {
-    background: fadeout(@red, 80%);
-    color: lighten(@red, 15%);
+.invalid {
+    background: fadeout(@red, 80%) !important;
+    color: lighten(@red, 15%) !important;
 }
 
 .punctuation {
@@ -100,13 +104,13 @@
       color: fadeout(@cyan, 25%);
     }
 
-    &.string {
-      color: fadeout(@blue, 25%);
-    }
-
     &.inheritance {
       color: @silver;
     }
+  }
+
+  &.separator.key-value {
+    color: @violet;
   }
 }
 
