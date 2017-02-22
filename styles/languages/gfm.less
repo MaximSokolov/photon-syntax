@@ -1,85 +1,85 @@
 @import "../colors";
 
-.gfm {
-  .heading {
+.syntax--gfm {
+  .syntax--heading {
     color: @cyan;
 
-    &.marker {
+    &.syntax--marker {
       color: fadeout(@cyan, 25%);
     }
   }
 
-  .quote {
+  .syntax--quote {
     color: @text;
 
-    &.support {
+    &.syntax--support {
         color: @light-gray;
     }
   }
 
-  .username,
-  .mention {
+  .syntax--username,
+  .syntax--mention {
     color: @light-blue;
   }
 
-  .link {
+  .syntax--link {
     color: fadeout(@blue, 25%); // punctuation
 
-    .entity {
+    .syntax--entity {
       color: @blue;
     }
 
-    &.underline {
+    &.syntax--underline {
       color: lighten(@silver, 10%);
 
-      .punctuation.definition {
+      .syntax--punctuation.syntax--definition {
         color: @silver;
       }
     }
   }
 
-  .issue {
+  .syntax--issue {
     color: @cyan;
   }
 
-  .support {
+  .syntax--support {
     color: @silver;
   }
 
-  .table .border {
+  .syntax--table .syntax--border {
     color: @light-purple;
   }
 
-  .list {
+  .syntax--list {
     color: @violet;
   }
 
-  .critic.gfm {
-    .marker {
-      &.addition {
+  .syntax--critic.syntax--gfm {
+    .syntax--marker {
+      &.syntax--addition {
         color: @green;
       }
 
-      &.deletion {
+      &.syntax--deletion {
         color: @magenta;
       }
 
-      &.substitution {
+      &.syntax--substitution {
         color: @orange;
       }
 
-      &.comment {
+      &.syntax--comment {
         color: @blue;
       }
 
-      &.highlight {
+      &.syntax--highlight {
         color: @purple;
         background: @selection;
         border-radius: 3px;
       }
     }
 
-    .operator {
+    .syntax--operator {
       color: @violet;
     }
   }

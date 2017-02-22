@@ -1,19 +1,19 @@
 @import "../colors";
 
-.yaml {
-  .string, {
+.syntax--yaml {
+  .syntax--string, {
     color: @text;
 
-    .punctuation.definition {
+    .syntax--punctuation.syntax--definition {
       color: lighten(@silver, 10%);
     }
   }
 
-  .punctuation.separator.key-value {
+  .syntax--punctuation.syntax--separator.syntax--key-value {
     color: @violet;
   }
 
-  .punctuation.definition.entry {
+  .syntax--punctuation.syntax--definition.syntax--entry {
     color: lighten(@purple, 5%);
   }
 }

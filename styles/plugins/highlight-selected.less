@@ -1,14 +1,13 @@
 @import "../colors";
 
-atom-text-editor,
-atom-text-editor::shadow {
+atom-text-editor {
   .highlights {
     .highlight-selected .region {
       border-color: @silver;
       border-radius: 4px;
     }
 
-    .highlight-selected.background .region {
+    .highlight-selected.syntax--background .region {
       background-color: fadeout(@cyan, 80%);
       background-color: @selection;
     }

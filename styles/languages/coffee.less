@@ -1,36 +1,36 @@
 @import "../colors";
 
-.coffee {
+.syntax--coffee {
   // Color function name only in functions' declarations
-  .meta.function {
-    .entity.name.function {
+  .syntax--meta.syntax--function {
+    .syntax--entity.syntax--name.syntax--function {
       color: @cyan;
     }
   }
 
-  .entity {
+  .syntax--entity {
     color: @text;
 
-    &.name.type.object {
+    &.syntax--name.syntax--type.syntax--object {
       color: @text;
     }
 
-    &.name.class,
-    &.name.type,
-    &.inherited-class {
+    &.syntax--name.syntax--class,
+    &.syntax--name.syntax--type,
+    &.syntax--inherited-class {
       color: @cyan;
     }
   }
 
-  .punctuation.separator.key-value {
+  .syntax--punctuation.syntax--separator.syntax--key-value {
     color: @violet;
   }
 
-  .embedded {
+  .syntax--embedded {
     color: @light-purple;
     font-style: italic;
 
-    .punctuation.section {
+    .syntax--punctuation.syntax--section {
       color: darken(@light-purple, 10%);
       font-style: normal;
     }

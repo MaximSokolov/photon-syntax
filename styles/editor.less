@@ -1,6 +1,6 @@
 @import "colors";
 
-atom-text-editor, :host {
+atom-text-editor {
   background: @background;
   color: @text;
 
@@ -32,12 +32,12 @@ atom-text-editor, :host {
   }
 
   .search-results {
-    .marker .region {
+    .syntax--marker .region {
       background: transparent;
       border: @result-marker;
     }
 
-    .marker.current-result .region {
+    .syntax--marker.current-result .region {
       border: @result-marker-selected;
     }
   }

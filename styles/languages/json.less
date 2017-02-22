@@ -1,36 +1,36 @@
 @import "../colors";
 
-.json {
-  .punctuation.dictionary {
-    &.definition.begin,
-    &.definition.end,
-    &.separator.key-value,
-    &.separator.pair {
+.syntax--json {
+  .syntax--punctuation.syntax--dictionary {
+    &.syntax--definition.syntax--begin,
+    &.syntax--definition.syntax--end,
+    &.syntax--separator.syntax--key-value,
+    &.syntax--separator.syntax--pair {
       color: @silver;
     }
 
-    &.separator.key-value {
+    &.syntax--separator.syntax--key-value {
       color: @violet;
     }
   }
 
-  .structure.dictionary > .string.quoted.double {
+  .syntax--structure.syntax--dictionary > .syntax--string.syntax--quoted.syntax--double {
     color: @cyan;
 
-    .punctuation.definition.string {
+    .syntax--punctuation.syntax--definition.syntax--string {
       color: fadeout(@cyan, 25%);
     }
   }
 
-  .structure.dictionary.value > .string.quoted.double {
+  .syntax--structure.syntax--dictionary.syntax--value > .syntax--string.syntax--quoted.syntax--double {
     color: @text;
 
-    .punctuation.definition.string {
+    .syntax--punctuation.syntax--definition.syntax--string {
       color: lighten(@silver, 10%);
     }
   }
 
-  .numeric {
+  .syntax--numeric {
     color: @light-blue;
   }
 }
