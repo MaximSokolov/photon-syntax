@@ -1,27 +1,27 @@
-@import "../colors.less";
+@import "../colors";
 
-.diff {
-  .header {
+.syntax--diff {
+  .syntax--header {
     font-weight: bold;
     color: @blue;
 
-    .punctuation.definition {
-      &.from-file {
+    .syntax--punctuation.syntax--definition {
+      &.syntax--from-file {
         color: @red;
       }
 
-      &.to-file {
+      &.syntax--to-file {
         color: @green;
       }
     }
   }
 
-  .range {
-    .punctuation.definition {
+  .syntax--range {
+    .syntax--punctuation.syntax--definition {
       color: @silver;
     }
 
-    .line-number {
+    .syntax--line-number {
       color: @cyan;
       opacity: 1;
     }

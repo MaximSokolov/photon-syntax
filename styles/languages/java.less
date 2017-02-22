@@ -1,33 +1,33 @@
 @import "../colors";
 
-.java {
-  .import {
-    .storage.modifier {
+.syntax--java {
+  .syntax--import {
+    .syntax--storage.syntax--modifier {
     color: @text;
 
     }
-    .keyword {
+    .syntax--keyword {
       color: @violet;
     }
   }
 
-  .variable.parameter {
+  .syntax--variable.syntax--parameter {
     font-style: normal;
   }
 
-  .storage {
-    &.type {
+  .syntax--storage {
+    &.syntax--type {
       color: @text;
     }
 
     // e.g. void, int, public
-    &.primitive,
-    &.modifier {
+    &.syntax--primitive,
+    &.syntax--modifier {
       color: @violet;
     }
   }
 
-  .keyword.operator.dereference {
+  .syntax--keyword.syntax--operator.syntax--dereference {
     color: @text;
   }
 }

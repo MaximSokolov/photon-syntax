@@ -1,11 +1,6 @@
 @import "../colors";
 
-atom-text-editor,
-atom-text-editor::shadow {
-  .highlight.bracket-matcher {
-    .region {
-      border-radius: 0px;
-      border-bottom: 1px solid @bracket-matcher;
-    }
-  }
+atom-text-editor .highlight.bracket-matcher .region {
+  border-radius: 0px;
+  border-bottom: 1px solid @bracket-matcher;
 }

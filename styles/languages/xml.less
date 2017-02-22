@@ -1,17 +1,17 @@
 @import "../colors";
 
-.xml {
-  .meta.tag.preprocessor {
+.syntax--xml {
+  .syntax--meta.syntax--tag.syntax--preprocessor {
     &,
     & > *,
-    & > .string > *
+    & > .syntax--string > *
     {
       color: @light-gray !important;
     }
   }
 
-  .meta.tag,
-  .entity.other.attribute-name {
+  .syntax--meta.syntax--tag,
+  .syntax--entity.syntax--other.syntax--attribute-name {
     color: @silver;
   }
 }

@@ -4,139 +4,137 @@
 // TextMate Language Grammar Guide:
 // http://manual.macromates.com/en/language_grammars#naming_conventions
 
-.comment {
+.syntax--comment {
   font-style: italic;
   color: @light-gray;
 }
 
-.string {
+.syntax--string {
   color: @blue;
 
-  &.regexp {
+  &.syntax--regexp {
     color: @purple;
   }
 
-  .punctuation.definition {
+  .syntax--punctuation.syntax--definition {
     color: fadeout(@blue, 25%);
   }
 }
 
-.constant {
-  &.numeric {
+.syntax--constant {
+  &.syntax--numeric {
     color: @light-blue;
   }
 
-  &.language {
+  &.syntax--language {
     color: @light-blue;
   }
 
-  &.character {
+  &.syntax--character {
     color: @purple;
   }
 }
 
-.variable.parameter {
-  font-style: italic;
+.syntax--variable {
+  &.syntax--language {
+    color: @light-purple;
+  }
+
+  &.syntax--parameter {
+    font-style: italic;
+  }
 }
 
-.variable.language {
-  color: @light-purple;
-}
-
-.variable.readwrite {
-  color: @light-purple;
-}
-
-.keyword {
+.syntax--keyword {
   color: @violet;
 }
 
-.storage {
+.syntax--storage {
   color: @violet;
 
-  &.fixme, &.xxx, &.hack, {
+  &.syntax--fixme, &.syntax--xxx, &.syntax--hack, {
     color: @magenta;
   }
 
-  &.todo, &.note, &.idea, &.review, &.nb {
+  &.syntax--todo, &.syntax--note, &.syntax--idea, &.syntax--review, &.syntax--nb {
     color: @purple;
   }
 
-  &.changed {
+  &.syntax--changed {
     color: @yellow;
   }
 }
 
-.entity {
-  &.name {
+.syntax--entity {
+  &.syntax--name {
     color: @cyan;
   }
 
-  &.attribute-name {
+  &.syntax--attribute-name {
     color: lighten(@silver, 10%);
   }
 }
 
-.meta.function-call, .meta.method-call {
-  & > .entity.name.function {
+.syntax--meta.syntax--function-call, .syntax--meta.syntax--method-call {
+  & > .syntax--entity.syntax--name.syntax--function {
     color: @text;
   }
 }
 
-.support {
-  &.variable {
+.syntax--support {
+  &.syntax--variable {
     color: @light-purple;
   }
 }
 
-.invalid {
+.syntax--invalid {
     background: fadeout(@red, 80%) !important;
     color: lighten(@red, 15%) !important;
 }
 
-.punctuation {
-  &.definition {
-    &.tag {
+.syntax--punctuation {
+  &.syntax--definition {
+    &.syntax--tag {
       color: fadeout(@cyan, 25%);
     }
   }
 
-  &.separator.key-value {
+  &.syntax--separator.syntax--key-value {
     color: @violet;
   }
 }
 
-.markup {
-  &.underline {
+.syntax--markup {
+  &.syntax--underline {
     border-bottom: thin solid;
   }
 
-  &.bold {
+  &.syntax--bold {
     font-weight: bold;
   }
 
-  &.italic,
-  &.quote {
+  &.syntax--italic,
+  &.syntax--quote {
     font-style: italic;
   }
 
-  &.strike {
+  &.syntax--strike {
     text-decoration: line-through;
   }
 
-  &.deleted {
+  &.syntax--deleted {
     color: @orange;
   }
 
-  &.changed {
+  &.syntax--changed {
     color: @yellow;
   }
 
-  &.inserted {
+  &.syntax--inserted {
     color: @green;
   }
 
-  &.raw {
+  &.syntax--raw {
     color: @silver;
   }
 }

@@ -1,124 +1,124 @@
 @import "../colors";
 
-.css, .stylus, .sass {
-  .property-name {
+.syntax--css, .syntax--stylus, .syntax--sass {
+  .syntax--property-name {
     color: @light-purple;
   }
 
-  .meta.property-name, .meta.property-value {
+  .syntax--meta.syntax--property-name, .syntax--meta.syntax--property-value {
     color: @silver;
   }
 
-  .variable,
-  .constant.font-name,
-  .constant.property-value {
+  .syntax--variable,
+  .syntax--constant.syntax--font-name,
+  .syntax--constant.syntax--property-value {
     color: @text;
   }
 
-  .separator.key-value {
+  .syntax--separator.syntax--key-value {
     color: @violet;
   }
 
   // e.g. url
-  .function {
+  .syntax--function {
     color: @text;
 
-    &.punctuation {
+    &.syntax--punctuation {
       color: @silver;
     }
   }
 
-  .rgb-value,
-  .numeric {
+  .syntax--rgb-value,
+  .syntax--numeric {
     color: @light-blue;
 
-    .punctuation.definition.constant {
+    .syntax--punctuation.syntax--definition.syntax--constant {
       color: fadeout(@light-blue, 15%);
     }
   }
 
-  .keyword.other.unit {
+  .syntax--keyword.syntax--other.syntax--unit {
     color: fadeout(@light-blue, 15%);
   }
 
   // &
-  .entity.name.tag.reference,
-  .entity.other.attribute-name.parent-selector {
+  .syntax--entity.syntax--name.syntax--tag.syntax--reference,
+  .syntax--entity.syntax--other.syntax--attribute-name.syntax--parent-selector {
       color: @violet;
   }
 
   // @import, @font-face
-  .punctuation.definition.keyword,
-  .keyword.control {
+  .syntax--punctuation.syntax--definition.syntax--keyword,
+  .syntax--keyword.syntax--control {
     color: @violet;
   }
 
   // '{', '}', ';', ','
-  .meta.brace,
-  .punctuation.terminator.rule,
-  .punctuation.section.property-list,
-  .punctuation.separator.list {
+  .syntax--meta.syntax--brace,
+  .syntax--punctuation.syntax--terminator.syntax--rule,
+  .syntax--punctuation.syntax--section.syntax--property-list,
+  .syntax--punctuation.syntax--separator.syntax--list {
     color: lighten(@silver, 10%);
   }
 
-  .keyword.important {
+  .syntax--keyword.syntax--important {
     color: @violet;
   }
 
-  .keyword.control.font-face,
-  .keyword.control.font-face > .punctuation {
+  .syntax--keyword.syntax--control.syntax--font-face,
+  .syntax--keyword.syntax--control.syntax--font-face > .syntax--punctuation {
     color: @cyan;
   }
 
-  .attribute-selector {
-    .punctuation.definition.entity {
+  .syntax--attribute-selector {
+    .syntax--punctuation.syntax--definition.syntax--entity {
       color: lighten(@silver, 10%);
     }
 
     // 'href' in 'a[href="foo"]' or 'lang' in 'span[lang]'
-    .entity.other.attribute-name.attribute {
+    .syntax--entity.syntax--other.syntax--attribute-name.syntax--attribute {
       color: @text;
     }
 
     // '^=' in 'a[href^="https"]'
-    .punctuation.separator.operator {
+    .syntax--punctuation.syntax--separator.syntax--operator {
       color: @violet;
     }
   }
 
-  .variable.parameter.misc {
+  .syntax--variable.syntax--parameter.syntax--misc {
     color: @blue;
   }
 
   // ::first-line in p::first-line
   // :active in a:active
-  .attribute-name {
-    &.pseudo-element, &.pseudo-class {
+  .syntax--attribute-name {
+    &.syntax--pseudo-element, &.syntax--pseudo-class {
       color: @cyan;
 
-      .punctuation.definition {
+      .syntax--punctuation.syntax--definition {
         color: fadeout(@cyan, 25%);
       }
     }
   }
 
-  .keyword.control.html,
-  .attribute-name.class,
-  .attribute-name.id,
-  .tag.name  {
+  .syntax--keyword.syntax--control.syntax--html,
+  .syntax--attribute-name.syntax--class,
+  .syntax--attribute-name.syntax--id,
+  .syntax--tag.syntax--name  {
     color: @cyan;
 
-    .punctuation.definition {
+    .syntax--punctuation.syntax--definition {
       color: fadeout(@cyan, 25%);
     }
   }
 
-  .support.constant.color {
+  .syntax--support.syntax--constant.syntax--color {
     color: @text;
   }
 
-  .keyword.operator,
-  .support.constant.mathematical-symbols {
+  .syntax--keyword.syntax--operator,
+  .syntax--support.syntax--constant.syntax--mathematical-symbols {
     color: @violet;
   }
 }
