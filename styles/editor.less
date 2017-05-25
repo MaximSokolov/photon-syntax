@@ -42,25 +42,35 @@ atom-text-editor {
     }
   }
 
-  .gutter {
-    .line-number {
-      color: @gutter-text;
+  .scroll-view {
+    padding-left: 0.5em;
+  }
 
-      &.cursor-line, &.cursor-line-no-selection {
-        color: @gutter-text-selected;
+  .gutter-container {
+    border-right: 1px solid @wrap-guide;
+
+    .gutter {
+      background-color: #272c36;
+
+      .line-number {
+        color: @gutter-text;
+
+        &.cursor-line, &.cursor-line-no-selection {
+          color: @gutter-text-selected;
+        }
+
+        &.folded {
+          color: @blue;
+        }
       }
 
-      &.folded {
-        color: @blue;
-      }
-    }
-
-    .git-line-added.cursor-line {
+      .git-line-added.cursor-line {
         color: fadeout(@green, 25%);
-    }
+      }
 
-    .git-line-modified.cursor-line {
+      .git-line-modified.cursor-line {
         color: fadeout(@yellow, 25%);
+      }
     }
   }
 }

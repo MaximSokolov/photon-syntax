@@ -1,16 +1,7 @@
 @import "../colors";
 
-.syntax--coffee {
-  // Color function name only in functions' declarations
-  .syntax--meta.syntax--function {
-    .syntax--entity.syntax--name.syntax--function {
-      color: @cyan;
-    }
-  }
-
+.syntax--source.syntax--coffee {
   .syntax--entity {
-    color: @text;
-
     &.syntax--name.syntax--type.syntax--object {
       color: @text;
     }
@@ -27,10 +18,9 @@
   }
 
   .syntax--embedded {
-    color: @light-purple;
-    font-style: italic;
+    color: @text;
 
-    .syntax--punctuation.syntax--section {
+    &.syntax--punctuation.syntax--section {
       color: darken(@light-purple, 10%);
       font-style: normal;
     }

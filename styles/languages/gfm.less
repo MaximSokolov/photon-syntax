@@ -1,6 +1,6 @@
 @import "../colors";
 
-.syntax--gfm {
+.syntax--source.syntax--gfm {
   .syntax--heading {
     color: @cyan;
 
@@ -13,7 +13,7 @@
     color: @text;
 
     &.syntax--support {
-        color: @light-gray;
+        color: @violet;
     }
   }
 
@@ -24,16 +24,17 @@
 
   .syntax--link {
     color: fadeout(@blue, 25%); // punctuation
+    color: #a3a6b1;
 
     .syntax--entity {
       color: @blue;
     }
 
     &.syntax--underline {
-      color: lighten(@silver, 10%);
+      color: @text;
 
       .syntax--punctuation.syntax--definition {
-        color: @silver;
+        color: #a3a6b1;
       }
     }
   }
@@ -42,8 +43,8 @@
     color: @cyan;
   }
 
-  .syntax--support {
-    color: @silver;
+  &.syntax--support {
+    color: #a3a6b1;
   }
 
   .syntax--table .syntax--border {

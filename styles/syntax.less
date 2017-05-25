@@ -12,12 +12,12 @@
 .syntax--string {
   color: @blue;
 
-  &.syntax--regexp {
-    color: @purple;
+  &.syntax--punctuation.syntax--definition {
+    color: fadeout(@blue, 25%);
   }
 
-  .syntax--punctuation.syntax--definition {
-    color: fadeout(@blue, 25%);
+  &.syntax--regexp > .syntax--punctuation.syntax--definition {
+    color: @purple;
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   &.syntax--character {
-    color: @purple;
+    color: @light-purple;
   }
 }
 
@@ -71,7 +71,7 @@
   }
 
   &.syntax--attribute-name {
-    color: lighten(@silver, 10%);
+    color: rgb(175, 185, 193);
   }
 }
 
@@ -98,17 +98,9 @@
       color: fadeout(@cyan, 25%);
     }
   }
-
-  &.syntax--separator.syntax--key-value {
-    color: @violet;
-  }
 }
 
 .syntax--markup {
-  &.syntax--underline {
-    border-bottom: thin solid;
-  }
-
   &.syntax--bold {
     font-weight: bold;
   }
@@ -135,6 +127,6 @@
   }
 
   &.syntax--raw {
-    color: @silver;
+    color: #a3a6b1;
   }
 }

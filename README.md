@@ -1,7 +1,8 @@
 <h1 align='center'> Photon </h1>
 
 <p align="center">
-	A dark syntax theme for Atom
+	A dark syntax theme for <a href='https://atom.io/'>Atom</a>
+	<img src="https://atom.io/favicon.ico" width=16 height=16/>
 </p>
 
 ### Installation
